@@ -151,7 +151,7 @@ export function AgentPool({ agents, scoreMap, assignedIds, onOpenAgent }: Props)
                 />
               </button>
               {!isCollapsed && (
-                <div className="px-2 pb-2 space-y-1.5">
+                <div className="px-2 pb-2 grid grid-cols-2 gap-1.5">
                   {list.map((a) => (
                     <AgentCard
                       key={a.id}

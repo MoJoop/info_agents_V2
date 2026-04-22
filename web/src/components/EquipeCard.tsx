@@ -103,7 +103,6 @@ function Slot({ equipeId, slot, assignment, agentsById, scoreMap, onOpenAgent, o
           <AgentCard
             agent={agent}
             score={scoreMap.get(agent.id) ?? null}
-            compact
             onClick={() => onOpenAgent(agent)}
           />
           <button

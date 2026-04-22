@@ -158,7 +158,7 @@ export default function App() {
         />
 
         {/* Body */}
-        <div className="flex-1 min-h-0 grid grid-cols-[320px_1fr] gap-0">
+        <div className="flex-1 min-h-0 grid grid-cols-[minmax(420px,36%)_1fr] gap-0">
           <aside className="border-r border-slate-200 bg-white/50 flex flex-col min-h-0">
             <AgentPool
               agents={sortedAgents}
