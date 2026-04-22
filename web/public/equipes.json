@@ -1,0 +1,4073 @@
+{
+  "metadata": {
+    "date_export": "2026-04-22",
+    "total_equipes": 35
+  },
+  "equipes": [
+    {
+      "id": "EQ1",
+      "ordre": 1,
+      "nb_dr": 10,
+      "region_dominante": "DAKAR",
+      "regions": [
+        "DAKAR"
+      ],
+      "departements": [
+        "DAKAR"
+      ],
+      "dr_list": [
+        {
+          "code": "11301130032",
+          "nom": "ABATTOIRS IV",
+          "dept": "DAKAR",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 158.5,
+          "lon": -17.447654,
+          "lat": 14.678299
+        },
+        {
+          "code": "11301140053",
+          "nom": "COLOBANE HOCK",
+          "dept": "DAKAR",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 228.1,
+          "lon": -17.443251,
+          "lat": 14.696355
+        },
+        {
+          "code": "11301120005",
+          "nom": "ROUKHOU DJINE",
+          "dept": "DAKAR",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 199.3,
+          "lon": -17.438963,
+          "lat": 14.677568
+        },
+        {
+          "code": "11301220059",
+          "nom": "GRAND DAKAR X (NIARY TALLY)",
+          "dept": "DAKAR",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 319.3,
+          "lon": -17.451781,
+          "lat": 14.706835
+        },
+        {
+          "code": "11301330031",
+          "nom": null,
+          "dept": "DAKAR",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 217.8,
+          "lon": -17.456918,
+          "lat": 14.754383
+        },
+        {
+          "code": "11301310048",
+          "nom": "BIRA OUAKAM (TOUBA OUAKAM)",
+          "dept": "DAKAR",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 204.1,
+          "lon": -17.482654,
+          "lat": 14.725571
+        },
+        {
+          "code": "11301150007",
+          "nom": "AMITIE II",
+          "dept": "DAKAR",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 174.5,
+          "lon": -17.457477,
+          "lat": 14.700149
+        },
+        {
+          "code": "11301340037",
+          "nom": null,
+          "dept": "DAKAR",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 74.1,
+          "lon": -17.469078,
+          "lat": 14.724413
+        },
+        {
+          "code": "11301240101",
+          "nom": "HANN GANGUI",
+          "dept": "DAKAR",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 199.6,
+          "lon": -17.432987,
+          "lat": 14.732943
+        },
+        {
+          "code": "11301330131",
+          "nom": null,
+          "dept": "DAKAR",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 203.0,
+          "lon": -17.485965,
+          "lat": 14.7407
+        }
+      ]
+    },
+    {
+      "id": "EQ2",
+      "ordre": 2,
+      "nb_dr": 10,
+      "region_dominante": "DAKAR",
+      "regions": [
+        "DAKAR"
+      ],
+      "departements": [
+        "DAKAR",
+        "GUEDIAWAYE",
+        "PIKINE"
+      ],
+      "dr_list": [
+        {
+          "code": "14301110108",
+          "nom": "FITH MITH",
+          "dept": "GUEDIAWAYE",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 133.6,
+          "lon": -17.406852,
+          "lat": 14.774036
+        },
+        {
+          "code": "14301110028",
+          "nom": "GUENTEBA III",
+          "dept": "GUEDIAWAYE",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 167.3,
+          "lon": -17.418728,
+          "lat": 14.762555
+        },
+        {
+          "code": "14301110069",
+          "nom": "PARCELLES ASSAINIES  UNITE V",
+          "dept": "GUEDIAWAYE",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 184.7,
+          "lon": -17.426512,
+          "lat": 14.764311
+        },
+        {
+          "code": "11301430019",
+          "nom": "UNITE VII",
+          "dept": "DAKAR",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 180.2,
+          "lon": -17.431483,
+          "lat": 14.761957
+        },
+        {
+          "code": "11301430116",
+          "nom": "UNITE XX",
+          "dept": "DAKAR",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 150.5,
+          "lon": -17.443467,
+          "lat": 14.757596
+        },
+        {
+          "code": "11301420046",
+          "nom": "CITE IMPOTS ET DOMAINES",
+          "dept": "DAKAR",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 157.4,
+          "lon": -17.439207,
+          "lat": 14.750303
+        },
+        {
+          "code": "12301240039",
+          "nom": "CITE MOR MATY SARR",
+          "dept": "PIKINE",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 152.0,
+          "lon": -17.411483,
+          "lat": 14.741428
+        },
+        {
+          "code": "11301410182",
+          "nom": "SUD FOIRE (CITE OUSMANE DIOP)",
+          "dept": "DAKAR",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 108.4,
+          "lon": -17.462768,
+          "lat": 14.734515
+        },
+        {
+          "code": "11301410093",
+          "nom": "ARAFAT 2",
+          "dept": "DAKAR",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 127.9,
+          "lon": -17.454974,
+          "lat": 14.736737
+        },
+        {
+          "code": "11301410011",
+          "nom": "ZONE DE CAPTAGE",
+          "dept": "DAKAR",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 149.8,
+          "lon": -17.44182,
+          "lat": 14.733452
+        }
+      ]
+    },
+    {
+      "id": "EQ3",
+      "ordre": 3,
+      "nb_dr": 10,
+      "region_dominante": "DAKAR",
+      "regions": [
+        "DAKAR"
+      ],
+      "departements": [
+        "GUEDIAWAYE",
+        "PIKINE"
+      ],
+      "dr_list": [
+        {
+          "code": "14301120018",
+          "nom": "MBODE III",
+          "dept": "GUEDIAWAYE",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 115.3,
+          "lon": -17.39283,
+          "lat": 14.770443
+        },
+        {
+          "code": "14301120060",
+          "nom": "CITE URBANISME",
+          "dept": "GUEDIAWAYE",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 141.8,
+          "lon": -17.390606,
+          "lat": 14.780327
+        },
+        {
+          "code": "14301220014",
+          "nom": "HAMO IV",
+          "dept": "GUEDIAWAYE",
+          "region": "DAKAR",
+          "milieu": null,
+          "nbre_men": 147.2,
+          "lon": -17.387613,
+          "lat": 14.782694
+        },
+        {
+          "code": "14301230018",
+          "nom": "NIMZATT",
+          "dept": "GUEDIAWAYE",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 160.2,
+          "lon": -17.370665,
+          "lat": 14.775016
+        },
+        {
+          "code": "14301230065",
+          "nom": "DAROU SALAM",
+          "dept": "GUEDIAWAYE",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 101.0,
+          "lon": -17.368899,
+          "lat": 14.78194
+        },
+        {
+          "code": "14301230104",
+          "nom": "NDIOBENE (CITE VIVIANE)",
+          "dept": "GUEDIAWAYE",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 145.9,
+          "lon": -17.368673,
+          "lat": 14.787137
+        },
+        {
+          "code": "12301230022",
+          "nom": "AINOUMANE I",
+          "dept": "PIKINE",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 124.5,
+          "lon": -17.396607,
+          "lat": 14.758599
+        },
+        {
+          "code": "14301210010",
+          "nom": "SANT YALLA II",
+          "dept": "GUEDIAWAYE",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 159.1,
+          "lon": -17.38297,
+          "lat": 14.77405
+        },
+        {
+          "code": "12301210031",
+          "nom": "GAZELLE OUEST",
+          "dept": "PIKINE",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 160.2,
+          "lon": -17.400199,
+          "lat": 14.755692
+        },
+        {
+          "code": "12301250069",
+          "nom": "GOUYE SALAME I B",
+          "dept": "PIKINE",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 108.1,
+          "lon": -17.379492,
+          "lat": 14.768602
+        }
+      ]
+    },
+    {
+      "id": "EQ4",
+      "ordre": 4,
+      "nb_dr": 10,
+      "region_dominante": "DAKAR",
+      "regions": [
+        "DAKAR"
+      ],
+      "departements": [
+        "KEUR MASSAR",
+        "PIKINE"
+      ],
+      "dr_list": [
+        {
+          "code": "12301320016",
+          "nom": "DIACKSAO II",
+          "dept": "PIKINE",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 137.0,
+          "lon": -17.368857,
+          "lat": 14.751472
+        },
+        {
+          "code": "15201020077",
+          "nom": "AFFIA II",
+          "dept": "KEUR MASSAR",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 77.4,
+          "lon": -17.355681,
+          "lat": 14.766956
+        },
+        {
+          "code": "15201020006",
+          "nom": "MINAME I",
+          "dept": "KEUR MASSAR",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 162.0,
+          "lon": -17.369456,
+          "lat": 14.768929
+        },
+        {
+          "code": "12301310012",
+          "nom": null,
+          "dept": "PIKINE",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 140.8,
+          "lon": -17.383029,
+          "lat": 14.742637
+        },
+        {
+          "code": "15201010085",
+          "nom": "DAROU SALAM IV C",
+          "dept": "KEUR MASSAR",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 130.6,
+          "lon": -17.350871,
+          "lat": 14.784039
+        },
+        {
+          "code": "15201010154",
+          "nom": "DJIDA MARINE",
+          "dept": "KEUR MASSAR",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 100.0,
+          "lon": -17.35465,
+          "lat": 14.775602
+        },
+        {
+          "code": "15201010009",
+          "nom": "AINOUMADY III",
+          "dept": "KEUR MASSAR",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 95.9,
+          "lon": -17.350529,
+          "lat": 14.790628
+        },
+        {
+          "code": "12301330085",
+          "nom": "MEDINA DIAMAGUENE",
+          "dept": "PIKINE",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 99.0,
+          "lon": -17.352348,
+          "lat": 14.761658
+        },
+        {
+          "code": "12301330168",
+          "nom": "ARAFAT",
+          "dept": "PIKINE",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 159.1,
+          "lon": -17.3582,
+          "lat": 14.74785
+        },
+        {
+          "code": "12301260025",
+          "nom": null,
+          "dept": "PIKINE",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 148.3,
+          "lon": -17.380952,
+          "lat": 14.751817
+        }
+      ]
+    },
+    {
+      "id": "EQ5",
+      "ordre": 5,
+      "nb_dr": 10,
+      "region_dominante": "DAKAR",
+      "regions": [
+        "DAKAR"
+      ],
+      "departements": [
+        "KEUR MASSAR",
+        "PIKINE"
+      ],
+      "dr_list": [
+        {
+          "code": "15203020054",
+          "nom": "KEUR BAKA",
+          "dept": "KEUR MASSAR",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 183.6,
+          "lon": -17.305033,
+          "lat": 14.769841
+        },
+        {
+          "code": "15202020001",
+          "nom": "MEDINATOUL SALAM",
+          "dept": "KEUR MASSAR",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 363.2,
+          "lon": -17.336484,
+          "lat": 14.784442
+        },
+        {
+          "code": "12301350090",
+          "nom": "ALDIANA( KEUR MBAYE FALL)",
+          "dept": "PIKINE",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 210.2,
+          "lon": -17.317513,
+          "lat": 14.74117
+        },
+        {
+          "code": "12301350025",
+          "nom": "CITE SIPRES V",
+          "dept": "PIKINE",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 167.3,
+          "lon": -17.31383,
+          "lat": 14.727939
+        },
+        {
+          "code": "12301350162",
+          "nom": "MEDINA MBAO CONCORDE ( KEUR MBAYE FALL)",
+          "dept": "PIKINE",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 151.0,
+          "lon": -17.307996,
+          "lat": 14.751862
+        },
+        {
+          "code": "15202010171",
+          "nom": "DAROU MISSETTE EST I",
+          "dept": "KEUR MASSAR",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 166.3,
+          "lon": -17.319511,
+          "lat": 14.7712
+        },
+        {
+          "code": "15202010096",
+          "nom": "PARCELLES ASSAINIES UNITE IV",
+          "dept": "KEUR MASSAR",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 240.8,
+          "lon": -17.316467,
+          "lat": 14.782015
+        },
+        {
+          "code": "15202010023",
+          "nom": "NIAYES NDIORANE",
+          "dept": "KEUR MASSAR",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 140.8,
+          "lon": -17.305482,
+          "lat": 14.791592
+        },
+        {
+          "code": "15202010245",
+          "nom": "DAROU SALAM II (BOUNE)",
+          "dept": "KEUR MASSAR",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 102.0,
+          "lon": -17.336982,
+          "lat": 14.764231
+        },
+        {
+          "code": "15203010032",
+          "nom": "PARCELLES ASSAINIES UNITE 10",
+          "dept": "KEUR MASSAR",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 173.4,
+          "lon": -17.291329,
+          "lat": 14.758032
+        }
+      ]
+    },
+    {
+      "id": "EQ6",
+      "ordre": 6,
+      "nb_dr": 10,
+      "region_dominante": "DAKAR",
+      "regions": [
+        "DAKAR"
+      ],
+      "departements": [
+        "RUFISQUE"
+      ],
+      "dr_list": [
+        {
+          "code": "13202020050",
+          "nom": null,
+          "dept": "RUFISQUE",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 165.3,
+          "lon": -17.246854,
+          "lat": 14.752208
+        },
+        {
+          "code": "13202020118",
+          "nom": null,
+          "dept": "RUFISQUE",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 127.5,
+          "lon": -17.267918,
+          "lat": 14.776499
+        },
+        {
+          "code": "13301120007",
+          "nom": "CHAMPS DE COURSE",
+          "dept": "RUFISQUE",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 107.1,
+          "lon": -17.265402,
+          "lat": 14.717425
+        },
+        {
+          "code": "13301120083",
+          "nom": "ARAFAT I",
+          "dept": "RUFISQUE",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 92.8,
+          "lon": -17.257341,
+          "lat": 14.71558
+        },
+        {
+          "code": "13301130083",
+          "nom": "GUENDEL I",
+          "dept": "RUFISQUE",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 100.0,
+          "lon": -17.277399,
+          "lat": 14.717131
+        },
+        {
+          "code": "13301130003",
+          "nom": "CITE KHALIFA ABABACAR SY",
+          "dept": "RUFISQUE",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 155.1,
+          "lon": -17.291009,
+          "lat": 14.745733
+        },
+        {
+          "code": "13101000055",
+          "nom": "SANTHIIOUB GUEDJ",
+          "dept": "RUFISQUE",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 68.4,
+          "lon": -17.234737,
+          "lat": 14.691552
+        },
+        {
+          "code": "13301110066",
+          "nom": "SANTA YALLA II",
+          "dept": "RUFISQUE",
+          "region": "DAKAR",
+          "milieu": "URBAIN",
+          "nbre_men": 106.1,
+          "lon": -17.280229,
+          "lat": 14.734487
+        },
+        {
+          "code": "13202030020",
+          "nom": "NIACOUL RAB",
+          "dept": "RUFISQUE",
+          "region": "DAKAR",
+          "milieu": "RURAL",
+          "nbre_men": 107.0,
+          "lon": -17.275338,
+          "lat": 14.774984
+        },
+        {
+          "code": "13202030115",
+          "nom": "CITE APIX",
+          "dept": "RUFISQUE",
+          "region": "DAKAR",
+          "milieu": "RURAL",
+          "nbre_men": 143.4,
+          "lon": -17.292283,
+          "lat": 14.806012
+        }
+      ]
+    },
+    {
+      "id": "EQ7",
+      "ordre": 7,
+      "nb_dr": 10,
+      "region_dominante": "THIES",
+      "regions": [
+        "DAKAR",
+        "THIES"
+      ],
+      "departements": [
+        "RUFISQUE",
+        "THIES",
+        "TIVAOUANE"
+      ],
+      "dr_list": [
+        {
+          "code": "72301220067",
+          "nom": "MBOUR II",
+          "dept": "THIES",
+          "region": "THIES",
+          "milieu": "URBAIN",
+          "nbre_men": 103.5,
+          "lon": -16.938426,
+          "lat": 14.769749
+        },
+        {
+          "code": "72301110102",
+          "nom": "THIALY (GRAND THIALY)",
+          "dept": "THIES",
+          "region": "THIES",
+          "milieu": "URBAIN",
+          "nbre_men": 172.1,
+          "lon": -16.92999,
+          "lat": 14.810167
+        },
+        {
+          "code": "72203030017",
+          "nom": "H1 EMAAP_H2 SEEMAAP_NDIAKHATE MADARO_PALAL",
+          "dept": "THIES",
+          "region": "THIES",
+          "milieu": "RURAL",
+          "nbre_men": 88.9,
+          "lon": -17.03353,
+          "lat": 14.77101
+        },
+        {
+          "code": "72203040027",
+          "nom": "DAROU SALAM",
+          "dept": "THIES",
+          "region": "THIES",
+          "milieu": "URBAIN",
+          "nbre_men": 91.0,
+          "lon": -17.117651,
+          "lat": 14.916202
+        },
+        {
+          "code": "72301210161",
+          "nom": "MBAMBARA",
+          "dept": "THIES",
+          "region": "THIES",
+          "milieu": "URBAIN",
+          "nbre_men": 82.0,
+          "lon": -16.916748,
+          "lat": 14.787867
+        },
+        {
+          "code": "72301210035",
+          "nom": "HERSENT I",
+          "dept": "THIES",
+          "region": "THIES",
+          "milieu": "URBAIN",
+          "nbre_men": 90.2,
+          "lon": -16.91535,
+          "lat": 14.773829
+        },
+        {
+          "code": "73204050006",
+          "nom": "NDIAKHATE GORMONE",
+          "dept": "TIVAOUANE",
+          "region": "THIES",
+          "milieu": "RURAL",
+          "nbre_men": 65.6,
+          "lon": -16.876022,
+          "lat": 14.976496
+        },
+        {
+          "code": "73102000070",
+          "nom": "NDINDY",
+          "dept": "TIVAOUANE",
+          "region": "THIES",
+          "milieu": "URBAIN",
+          "nbre_men": 99.4,
+          "lon": -16.794183,
+          "lat": 14.960024
+        },
+        {
+          "code": "13202010046",
+          "nom": "COMICO V BAMBILOR",
+          "dept": "RUFISQUE",
+          "region": "DAKAR",
+          "milieu": "RURAL",
+          "nbre_men": 152.5,
+          "lon": -17.180246,
+          "lat": 14.808877
+        },
+        {
+          "code": "13202030202",
+          "nom": "DENY GUEDJ NORD",
+          "dept": "RUFISQUE",
+          "region": "DAKAR",
+          "milieu": "RURAL",
+          "nbre_men": 126.2,
+          "lon": -17.184293,
+          "lat": 14.8709
+        }
+      ]
+    },
+    {
+      "id": "EQ8",
+      "ordre": 8,
+      "nb_dr": 10,
+      "region_dominante": "THIES",
+      "regions": [
+        "THIES"
+      ],
+      "departements": [
+        "MBOUR"
+      ],
+      "dr_list": [
+        {
+          "code": "71102000249",
+          "nom": "DIAMAGUENE II",
+          "dept": "MBOUR",
+          "region": "THIES",
+          "milieu": "URBAIN",
+          "nbre_men": 118.9,
+          "lon": -16.960719,
+          "lat": 14.427857
+        },
+        {
+          "code": "71102000141",
+          "nom": "CHATEAU D'EAU SUD",
+          "dept": "MBOUR",
+          "region": "THIES",
+          "milieu": "URBAIN",
+          "nbre_men": 135.3,
+          "lon": -16.980707,
+          "lat": 14.41758
+        },
+        {
+          "code": "71102000023",
+          "nom": "ONCAD",
+          "dept": "MBOUR",
+          "region": "THIES",
+          "milieu": "URBAIN",
+          "nbre_men": 111.7,
+          "lon": -16.947738,
+          "lat": 14.419648
+        },
+        {
+          "code": "71203010109",
+          "nom": "WARANG SERERE",
+          "dept": "MBOUR",
+          "region": "THIES",
+          "milieu": "RURAL",
+          "nbre_men": 163.6,
+          "lon": -16.940688,
+          "lat": 14.370813
+        },
+        {
+          "code": "71203010020",
+          "nom": "MALICOUNDA SERERE",
+          "dept": "MBOUR",
+          "region": "THIES",
+          "milieu": "RURAL",
+          "nbre_men": 90.9,
+          "lon": -16.972602,
+          "lat": 14.462895
+        },
+        {
+          "code": "71202010032",
+          "nom": null,
+          "dept": "MBOUR",
+          "region": "THIES",
+          "milieu": "RURAL",
+          "nbre_men": 107.0,
+          "lon": -16.77653,
+          "lat": 14.270921
+        },
+        {
+          "code": "71202010023",
+          "nom": null,
+          "dept": "MBOUR",
+          "region": "THIES",
+          "milieu": "RURAL",
+          "nbre_men": 52.5,
+          "lon": -16.778858,
+          "lat": 14.249832
+        },
+        {
+          "code": "71203030022",
+          "nom": "H1 KHASSAP",
+          "dept": "MBOUR",
+          "region": "THIES",
+          "milieu": "RURAL",
+          "nbre_men": 69.7,
+          "lon": -17.066351,
+          "lat": 14.527226
+        },
+        {
+          "code": "71203080002",
+          "nom": "TEFESS",
+          "dept": "MBOUR",
+          "region": "THIES",
+          "milieu": "URBAIN",
+          "nbre_men": 92.0,
+          "lon": -17.078382,
+          "lat": 14.48559
+        },
+        {
+          "code": "71203020033",
+          "nom": "PACKY",
+          "dept": "MBOUR",
+          "region": "THIES",
+          "milieu": "RURAL",
+          "nbre_men": 48.5,
+          "lon": -17.088949,
+          "lat": 14.685946
+        }
+      ]
+    },
+    {
+      "id": "EQ9",
+      "ordre": 9,
+      "nb_dr": 11,
+      "region_dominante": "DIOURBEL",
+      "regions": [
+        "DIOURBEL",
+        "FATICK",
+        "THIES"
+      ],
+      "departements": [
+        "BAMBEY",
+        "FATICK",
+        "THIES"
+      ],
+      "dr_list": [
+        {
+          "code": "91203010004",
+          "nom": "BARI SINE",
+          "dept": "FATICK",
+          "region": "FATICK",
+          "milieu": "RURAL",
+          "nbre_men": 34.3,
+          "lon": -16.506266,
+          "lat": 14.589032
+        },
+        {
+          "code": "31201030022",
+          "nom": "H1 KEUR OMAR DEME-H2 KEUR BOYDO KA-H3 THIEWENE-KAIRE MAPATHE-KEUR KHALY COURA-THIALLE MABOUR",
+          "dept": "BAMBEY",
+          "region": "DIOURBEL",
+          "milieu": "RURAL",
+          "nbre_men": 94.9,
+          "lon": -16.663604,
+          "lat": 14.929803
+        },
+        {
+          "code": "31101000010",
+          "nom": "DVF CENTRE",
+          "dept": "BAMBEY",
+          "region": "DIOURBEL",
+          "milieu": "URBAIN",
+          "nbre_men": 239.5,
+          "lon": -16.454361,
+          "lat": 14.692086
+        },
+        {
+          "code": "31201010012",
+          "nom": "KEUR MASSAMBA NDOUMBE",
+          "dept": "BAMBEY",
+          "region": "DIOURBEL",
+          "milieu": "RURAL",
+          "nbre_men": 87.8,
+          "lon": -16.487857,
+          "lat": 14.944954
+        },
+        {
+          "code": "31203040012",
+          "nom": "NGATHIE FALL-H1 KEUR CHEIKH COUMBA FALL-MBADIANEME-H1 GOUYE NDIOLE-H2 KEUR MBAYE DIOUF",
+          "dept": "BAMBEY",
+          "region": "DIOURBEL",
+          "milieu": "RURAL",
+          "nbre_men": 81.8,
+          "lon": -16.406335,
+          "lat": 14.716841
+        },
+        {
+          "code": "31203030049",
+          "nom": "H1 DAROU TOCKNGOL",
+          "dept": "BAMBEY",
+          "region": "DIOURBEL",
+          "milieu": "RURAL",
+          "nbre_men": 74.7,
+          "lon": -16.474812,
+          "lat": 14.617489
+        },
+        {
+          "code": "31203010030",
+          "nom": "GATTE DIOCOUL I",
+          "dept": "BAMBEY",
+          "region": "DIOURBEL",
+          "milieu": "RURAL",
+          "nbre_men": 51.5,
+          "lon": -16.536574,
+          "lat": 14.694428
+        },
+        {
+          "code": "31202030018",
+          "nom": "NIOKETE",
+          "dept": "BAMBEY",
+          "region": "DIOURBEL",
+          "milieu": "RURAL",
+          "nbre_men": 171.6,
+          "lon": -16.451739,
+          "lat": 14.717248
+        },
+        {
+          "code": "72202020017",
+          "nom": "NGOUDIANE (DIACK MBODOKHANE II)",
+          "dept": "THIES",
+          "region": "THIES",
+          "milieu": "RURAL",
+          "nbre_men": 46.4,
+          "lon": -16.715923,
+          "lat": 14.689594
+        },
+        {
+          "code": "72202040067",
+          "nom": "THIATHIAO",
+          "dept": "THIES",
+          "region": "THIES",
+          "milieu": "RURAL",
+          "nbre_men": 63.6,
+          "lon": -16.666964,
+          "lat": 14.812196
+        },
+        {
+          "code": "72201020020",
+          "nom": "DIELING - H1 KEUR BALLA - H2 KEUR ASSANE WELE - H3 DIELING SERERE - H1 SERERE DE PAMENE 2 - PAMENE 2",
+          "dept": "THIES",
+          "region": "THIES",
+          "milieu": "RURAL",
+          "nbre_men": 58.6,
+          "lon": -16.805917,
+          "lat": 14.618858
+        }
+      ]
+    },
+    {
+      "id": "EQ10",
+      "ordre": 10,
+      "nb_dr": 10,
+      "region_dominante": "LOUGA",
+      "regions": [
+        "LOUGA",
+        "THIES"
+      ],
+      "departements": [
+        "KEBEMER",
+        "LOUGA",
+        "TIVAOUANE"
+      ],
+      "dr_list": [
+        {
+          "code": "83201030004",
+          "nom": "KARTALAO-TORDIO-H1 BELEL BOUBARY",
+          "dept": "LOUGA",
+          "region": "LOUGA",
+          "milieu": "RURAL",
+          "nbre_men": 70.7,
+          "lon": -15.93937,
+          "lat": 15.399557
+        },
+        {
+          "code": "81101000012",
+          "nom": "MEDINA",
+          "dept": "KEBEMER",
+          "region": "LOUGA",
+          "milieu": "URBAIN",
+          "nbre_men": 119.3,
+          "lon": -16.443894,
+          "lat": 15.374507
+        },
+        {
+          "code": "81201010011",
+          "nom": "DAROU MARNANE",
+          "dept": "KEBEMER",
+          "region": "LOUGA",
+          "milieu": "RURAL",
+          "nbre_men": 172.7,
+          "lon": -16.168274,
+          "lat": 15.108416
+        },
+        {
+          "code": "81201050014",
+          "nom": "NGANADO BASSALY-TAIF NGANADO(COMMUNE DE LORO)-DIORO DEMBA(LOUMBY DEFEDJI) COMMUNE LORO",
+          "dept": "KEBEMER",
+          "region": "LOUGA",
+          "milieu": "RURAL",
+          "nbre_men": 113.1,
+          "lon": -15.869706,
+          "lat": 15.360269
+        },
+        {
+          "code": "81201020048",
+          "nom": null,
+          "dept": "KEBEMER",
+          "region": "LOUGA",
+          "milieu": "RURAL",
+          "nbre_men": 117.1,
+          "lon": -16.063288,
+          "lat": 15.054746
+        },
+        {
+          "code": "81203020002",
+          "nom": null,
+          "dept": "KEBEMER",
+          "region": "LOUGA",
+          "milieu": "RURAL",
+          "nbre_men": 105.0,
+          "lon": -16.101418,
+          "lat": 15.273856
+        },
+        {
+          "code": "73101000020",
+          "nom": "LEBOU EST",
+          "dept": "TIVAOUANE",
+          "region": "THIES",
+          "milieu": "URBAIN",
+          "nbre_men": 97.0,
+          "lon": -16.630448,
+          "lat": 15.105769
+        },
+        {
+          "code": "73203010001",
+          "nom": "NDIOURKY-THIARRE SADY-KEUR MASSAMBA DIOME",
+          "dept": "TIVAOUANE",
+          "region": "THIES",
+          "milieu": "RURAL",
+          "nbre_men": 70.7,
+          "lon": -16.289461,
+          "lat": 15.258853
+        },
+        {
+          "code": "73201030030",
+          "nom": null,
+          "dept": "TIVAOUANE",
+          "region": "THIES",
+          "milieu": "RURAL",
+          "nbre_men": 139.3,
+          "lon": -16.79774,
+          "lat": 15.253235
+        },
+        {
+          "code": "73202020048",
+          "nom": null,
+          "dept": "TIVAOUANE",
+          "region": "THIES",
+          "milieu": "RURAL",
+          "nbre_men": 78.8,
+          "lon": -16.535131,
+          "lat": 15.078853
+        }
+      ]
+    },
+    {
+      "id": "EQ11",
+      "ordre": 11,
+      "nb_dr": 10,
+      "region_dominante": "LOUGA",
+      "regions": [
+        "LOUGA",
+        "SAINT-LOUIS"
+      ],
+      "departements": [
+        "LOUGA",
+        "SAINT LOUIS"
+      ],
+      "dr_list": [
+        {
+          "code": "43201010032",
+          "nom": "NGAINA WOLOF",
+          "dept": "SAINT LOUIS",
+          "region": "SAINT-LOUIS",
+          "milieu": "RURAL",
+          "nbre_men": 72.7,
+          "lon": -16.390427,
+          "lat": 15.917551
+        },
+        {
+          "code": "43201010026",
+          "nom": "POUNDIOUM - GOUYE TOURE  - H1 GOUYE TOURE PEULH",
+          "dept": "SAINT LOUIS",
+          "region": "SAINT-LOUIS",
+          "milieu": "RURAL",
+          "nbre_men": 113.1,
+          "lon": -16.401517,
+          "lat": 15.943487
+        },
+        {
+          "code": "83203030027",
+          "nom": "KEUR SAER GUEYE- THYLLA GUEYE- BAKHAYA DIA",
+          "dept": "LOUGA",
+          "region": "LOUGA",
+          "milieu": "RURAL",
+          "nbre_men": 72.7,
+          "lon": -16.230564,
+          "lat": 15.579187
+        },
+        {
+          "code": "83101000002",
+          "nom": "KEUR SERIGNE LOUGA EST",
+          "dept": "LOUGA",
+          "region": "LOUGA",
+          "milieu": "URBAIN",
+          "nbre_men": 151.7,
+          "lon": -16.205527,
+          "lat": 15.603842
+        },
+        {
+          "code": "83101000035",
+          "nom": "KEUR SERIGNE LOUGA EST",
+          "dept": "LOUGA",
+          "region": "LOUGA",
+          "milieu": "URBAIN",
+          "nbre_men": 129.1,
+          "lon": -16.21405,
+          "lat": 15.606804
+        },
+        {
+          "code": "83101000062",
+          "nom": "SANTHIABA CENTRE",
+          "dept": "LOUGA",
+          "region": "LOUGA",
+          "milieu": "URBAIN",
+          "nbre_men": 103.5,
+          "lon": -16.228632,
+          "lat": 15.625568
+        },
+        {
+          "code": "83101000088",
+          "nom": "ARTILLERIE SUD",
+          "dept": "LOUGA",
+          "region": "LOUGA",
+          "milieu": "URBAIN",
+          "nbre_men": 77.9,
+          "lon": -16.219109,
+          "lat": 15.627985
+        },
+        {
+          "code": "83101000116",
+          "nom": "MONTAGNE NORD",
+          "dept": "LOUGA",
+          "region": "LOUGA",
+          "milieu": "URBAIN",
+          "nbre_men": 152.7,
+          "lon": -16.20685,
+          "lat": 15.632233
+        },
+        {
+          "code": "83203020002",
+          "nom": "THIOLOM SAMB, H1 PEULGA, TAIBA PEULH, NDIENG CODE NIANE",
+          "dept": "LOUGA",
+          "region": "LOUGA",
+          "milieu": null,
+          "nbre_men": 68.7,
+          "lon": -16.213455,
+          "lat": 15.528311
+        },
+        {
+          "code": "83202020017",
+          "nom": "KEUR YORO TACKO",
+          "dept": "LOUGA",
+          "region": "LOUGA",
+          "milieu": "RURAL",
+          "nbre_men": 84.8,
+          "lon": -15.843332,
+          "lat": 15.999366
+        }
+      ]
+    },
+    {
+      "id": "EQ12",
+      "ordre": 12,
+      "nb_dr": 10,
+      "region_dominante": "SAINT-LOUIS",
+      "regions": [
+        "SAINT-LOUIS"
+      ],
+      "departements": [
+        "DAGANA",
+        "SAINT LOUIS"
+      ],
+      "dr_list": [
+        {
+          "code": "43101000009",
+          "nom": "GOXUMBATHIE",
+          "dept": "SAINT LOUIS",
+          "region": "SAINT-LOUIS",
+          "milieu": "URBAIN",
+          "nbre_men": 86.1,
+          "lon": -16.506364,
+          "lat": 16.045123
+        },
+        {
+          "code": "43101000233",
+          "nom": "CITE NIAKH",
+          "dept": "SAINT LOUIS",
+          "region": "SAINT-LOUIS",
+          "milieu": "URBAIN",
+          "nbre_men": 176.2,
+          "lon": -16.485433,
+          "lat": 16.014818
+        },
+        {
+          "code": "43101000069",
+          "nom": "DAROU MEDINA MARMYAL",
+          "dept": "SAINT LOUIS",
+          "region": "SAINT-LOUIS",
+          "milieu": "URBAIN",
+          "nbre_men": 84.0,
+          "lon": -16.488299,
+          "lat": 16.034462
+        },
+        {
+          "code": "43101000173",
+          "nom": "PIKINE SOR DIAGNE",
+          "dept": "SAINT LOUIS",
+          "region": "SAINT-LOUIS",
+          "milieu": "URBAIN",
+          "nbre_men": 120.9,
+          "lon": -16.489664,
+          "lat": 15.986291
+        },
+        {
+          "code": "43101000115",
+          "nom": "LEONA",
+          "dept": "SAINT LOUIS",
+          "region": "SAINT-LOUIS",
+          "milieu": "URBAIN",
+          "nbre_men": 110.7,
+          "lon": -16.495783,
+          "lat": 16.014427
+        },
+        {
+          "code": "41102000057",
+          "nom": "THIABAKH",
+          "dept": "DAGANA",
+          "region": "SAINT-LOUIS",
+          "milieu": "URBAIN",
+          "nbre_men": 116.8,
+          "lon": -15.684487,
+          "lat": 16.45816
+        },
+        {
+          "code": "41201040007",
+          "nom": "DIAMAGEUNE",
+          "dept": "DAGANA",
+          "region": "SAINT-LOUIS",
+          "milieu": "URBAIN",
+          "nbre_men": 109.2,
+          "lon": -15.698743,
+          "lat": 16.431467
+        },
+        {
+          "code": "41202050012",
+          "nom": "SANTIABA III",
+          "dept": "DAGANA",
+          "region": "SAINT-LOUIS",
+          "milieu": "URBAIN",
+          "nbre_men": 90.0,
+          "lon": -15.8095,
+          "lat": 16.500435
+        },
+        {
+          "code": "41202010013",
+          "nom": "DIAMA YALAR",
+          "dept": "DAGANA",
+          "region": "SAINT-LOUIS",
+          "milieu": "RURAL",
+          "nbre_men": 87.8,
+          "lon": -16.400497,
+          "lat": 16.205003
+        },
+        {
+          "code": "41202030004",
+          "nom": "DIAWAR - H1 DIAWAR GAE",
+          "dept": "DAGANA",
+          "region": "SAINT-LOUIS",
+          "milieu": "RURAL",
+          "nbre_men": 102.0,
+          "lon": -16.053249,
+          "lat": 16.457056
+        }
+      ]
+    },
+    {
+      "id": "EQ13",
+      "ordre": 13,
+      "nb_dr": 10,
+      "region_dominante": "SAINT-LOUIS",
+      "regions": [
+        "MATAM",
+        "SAINT-LOUIS"
+      ],
+      "departements": [
+        "DAGANA",
+        "MATAM",
+        "PODOR"
+      ],
+      "dr_list": [
+        {
+          "code": "111201020006",
+          "nom": "OREFONDE",
+          "dept": "MATAM",
+          "region": "MATAM",
+          "milieu": "RURAL",
+          "nbre_men": 110.1,
+          "lon": -13.731596,
+          "lat": 16.065288
+        },
+        {
+          "code": "42204060001",
+          "nom": "BRIGALE",
+          "dept": "PODOR",
+          "region": "SAINT-LOUIS",
+          "milieu": "URBAIN",
+          "nbre_men": 94.0,
+          "lon": -14.753371,
+          "lat": 16.548215
+        },
+        {
+          "code": "42204020011",
+          "nom": "DEMBE - KORKADIEL (LIDOUBE)",
+          "dept": "PODOR",
+          "region": "SAINT-LOUIS",
+          "milieu": "RURAL",
+          "nbre_men": 92.9,
+          "lon": -14.56242,
+          "lat": 16.538017
+        },
+        {
+          "code": "42204030060",
+          "nom": "H7 BELEL GAWDI - H3 BINGUEL SENO - H12 OURO OLO - H3 BETER LO - H12 LOUMBOL THIALAM",
+          "dept": "PODOR",
+          "region": "SAINT-LOUIS",
+          "milieu": "RURAL",
+          "nbre_men": 64.6,
+          "lon": -14.770713,
+          "lat": 16.366826
+        },
+        {
+          "code": "42204010031",
+          "nom": "TOULDE GALLE",
+          "dept": "PODOR",
+          "region": "SAINT-LOUIS",
+          "milieu": "RURAL",
+          "nbre_men": 119.1,
+          "lon": -14.503632,
+          "lat": 16.504486
+        },
+        {
+          "code": "42201020051",
+          "nom": "OULD MBOYRICK (MBELCOUM) - H18 BINGAL COBY - H17 GUINTOU AMADOU YERO - H11 GUINTOU THILELE - H12 GUINTOU WAMBABE - H19 DIAKEL",
+          "dept": "PODOR",
+          "region": "SAINT-LOUIS",
+          "milieu": "RURAL",
+          "nbre_men": 77.7,
+          "lon": -14.562684,
+          "lat": 15.985132
+        },
+        {
+          "code": "42203020043",
+          "nom": "DIAMEL(DIAMEL DIÉRY)-NDIOFNDE DIALY DE DIAMEL_x000D_",
+          "dept": "PODOR",
+          "region": "SAINT-LOUIS",
+          "milieu": "RURAL",
+          "nbre_men": 146.4,
+          "lon": -14.969938,
+          "lat": 16.493075
+        },
+        {
+          "code": "42201010046",
+          "nom": "H1 WAWAW",
+          "dept": "PODOR",
+          "region": "SAINT-LOUIS",
+          "milieu": null,
+          "nbre_men": 166.6,
+          "lon": -14.238088,
+          "lat": 16.225647
+        },
+        {
+          "code": "41201030002",
+          "nom": "BOULEYDI",
+          "dept": "DAGANA",
+          "region": "SAINT-LOUIS",
+          "milieu": "URBAIN",
+          "nbre_men": 38.4,
+          "lon": -15.469808,
+          "lat": 16.572574
+        },
+        {
+          "code": "41201010030",
+          "nom": "DIASSARNABE NDIACK FALL-H3 KEUR SIDY COUMSAL SOW-SOVOLNABE BELINAMARY 2",
+          "dept": "DAGANA",
+          "region": "SAINT-LOUIS",
+          "milieu": "RURAL",
+          "nbre_men": 94.9,
+          "lon": -15.70548,
+          "lat": 16.327003
+        }
+      ]
+    },
+    {
+      "id": "EQ14",
+      "ordre": 14,
+      "nb_dr": 10,
+      "region_dominante": "MATAM",
+      "regions": [
+        "MATAM"
+      ],
+      "departements": [
+        "KANEL",
+        "MATAM"
+      ],
+      "dr_list": [
+        {
+          "code": "111101000022",
+          "nom": "GOUREL SERIGNE",
+          "dept": "MATAM",
+          "region": "MATAM",
+          "milieu": "URBAIN",
+          "nbre_men": 99.0,
+          "lon": -13.249412,
+          "lat": 15.64604
+        },
+        {
+          "code": "111102000012",
+          "nom": "MODERNE II",
+          "dept": "MATAM",
+          "region": "MATAM",
+          "milieu": "URBAIN",
+          "nbre_men": 114.2,
+          "lon": -13.321705,
+          "lat": 15.619725
+        },
+        {
+          "code": "111201010008",
+          "nom": "AGNAM GOLY",
+          "dept": "MATAM",
+          "region": "MATAM",
+          "milieu": "RURAL",
+          "nbre_men": 83.8,
+          "lon": -13.69797,
+          "lat": 15.980379
+        },
+        {
+          "code": "111201050004",
+          "nom": "BARINABE",
+          "dept": "MATAM",
+          "region": "MATAM",
+          "milieu": "URBAIN",
+          "nbre_men": 76.8,
+          "lon": -13.589202,
+          "lat": 15.963148
+        },
+        {
+          "code": "111202010056",
+          "nom": "DOUMGA OURO THIERNO",
+          "dept": "MATAM",
+          "region": "MATAM",
+          "milieu": "RURAL",
+          "nbre_men": 85.8,
+          "lon": -13.453065,
+          "lat": 15.850722
+        },
+        {
+          "code": "111202030030",
+          "nom": "THIANCONE HIRAYE-GOUREL BOUBOU",
+          "dept": "MATAM",
+          "region": "MATAM",
+          "milieu": "RURAL",
+          "nbre_men": 55.5,
+          "lon": -13.383282,
+          "lat": 15.576858
+        },
+        {
+          "code": "111202020071",
+          "nom": "NDOULOUMADJI DEMBE",
+          "dept": "MATAM",
+          "region": "MATAM",
+          "milieu": "RURAL",
+          "nbre_men": 69.7,
+          "lon": -13.41996,
+          "lat": 15.800199
+        },
+        {
+          "code": "111202020021",
+          "nom": "TIGUERE YENE-H1 GOUREL DORO - H3 GOUREL KOUNIARY",
+          "dept": "MATAM",
+          "region": "MATAM",
+          "milieu": "RURAL",
+          "nbre_men": 73.7,
+          "lon": -13.268137,
+          "lat": 15.706447
+        },
+        {
+          "code": "112101000004",
+          "nom": "YIRLA",
+          "dept": "KANEL",
+          "region": "MATAM",
+          "milieu": "URBAIN",
+          "nbre_men": 56.6,
+          "lon": -13.173593,
+          "lat": 15.505191
+        },
+        {
+          "code": "111101000001",
+          "nom": "DIAMEL",
+          "dept": "MATAM",
+          "region": "MATAM",
+          "milieu": "URBAIN",
+          "nbre_men": 90.0,
+          "lon": -13.224486,
+          "lat": 15.680359
+        }
+      ]
+    },
+    {
+      "id": "EQ15",
+      "ordre": 15,
+      "nb_dr": 10,
+      "region_dominante": "LOUGA",
+      "regions": [
+        "LOUGA",
+        "MATAM"
+      ],
+      "departements": [
+        "LINGUERE",
+        "RANEROU"
+      ],
+      "dr_list": [
+        {
+          "code": "113101000005",
+          "nom": "RANEROU",
+          "dept": "RANEROU",
+          "region": "MATAM",
+          "milieu": "URBAIN",
+          "nbre_men": 99.0,
+          "lon": -13.959229,
+          "lat": 15.296742
+        },
+        {
+          "code": "113201030006",
+          "nom": null,
+          "dept": "RANEROU",
+          "region": "MATAM",
+          "milieu": "RURAL",
+          "nbre_men": 78.8,
+          "lon": -13.709789,
+          "lat": 14.653991
+        },
+        {
+          "code": "113201030065",
+          "nom": null,
+          "dept": "RANEROU",
+          "region": "MATAM",
+          "milieu": "RURAL",
+          "nbre_men": 109.0,
+          "lon": -13.902408,
+          "lat": 15.365779
+        },
+        {
+          "code": "113201020045",
+          "nom": "H2 OURO WENDOU BOKE - H1 KAHE - MADINA MBEM MBEM - H3 WENDOU FOSSE",
+          "dept": "RANEROU",
+          "region": "MATAM",
+          "milieu": "RURAL",
+          "nbre_men": 108.0,
+          "lon": -14.216304,
+          "lat": 14.731116
+        },
+        {
+          "code": "82202030026",
+          "nom": "NIOUKHOUL II",
+          "dept": "LINGUERE",
+          "region": "LOUGA",
+          "milieu": "RURAL",
+          "nbre_men": 74.7,
+          "lon": -15.130528,
+          "lat": 15.469401
+        },
+        {
+          "code": "82102000043",
+          "nom": "MONTAGNE",
+          "dept": "LINGUERE",
+          "region": "LOUGA",
+          "milieu": "URBAIN",
+          "nbre_men": 153.6,
+          "lon": -15.489606,
+          "lat": 15.363687
+        },
+        {
+          "code": "82102000010",
+          "nom": "ANGLE ISLAM",
+          "dept": "LINGUERE",
+          "region": "LOUGA",
+          "milieu": "URBAIN",
+          "nbre_men": 222.4,
+          "lon": -15.462458,
+          "lat": 15.358141
+        },
+        {
+          "code": "82201010021",
+          "nom": null,
+          "dept": "LINGUERE",
+          "region": "LOUGA",
+          "milieu": "RURAL",
+          "nbre_men": 65.6,
+          "lon": -14.973409,
+          "lat": 15.2247
+        },
+        {
+          "code": "82201020002",
+          "nom": null,
+          "dept": "LINGUERE",
+          "region": "LOUGA",
+          "milieu": "RURAL",
+          "nbre_men": 87.8,
+          "lon": -15.285424,
+          "lat": 14.833098
+        },
+        {
+          "code": "82201040011",
+          "nom": null,
+          "dept": "LINGUERE",
+          "region": "LOUGA",
+          "milieu": null,
+          "nbre_men": 56.5,
+          "lon": -14.847237,
+          "lat": 14.674744
+        }
+      ]
+    },
+    {
+      "id": "EQ16",
+      "ordre": 16,
+      "nb_dr": 10,
+      "region_dominante": "MATAM",
+      "regions": [
+        "MATAM",
+        "TAMBACOUNDA"
+      ],
+      "departements": [
+        "BAKEL",
+        "KANEL"
+      ],
+      "dr_list": [
+        {
+          "code": "51203010031",
+          "nom": "DJIMBE",
+          "dept": "BAKEL",
+          "region": "TAMBACOUNDA",
+          "milieu": "RURAL",
+          "nbre_men": 33.3,
+          "lon": -12.159419,
+          "lat": 14.624032
+        },
+        {
+          "code": "51203030018",
+          "nom": "MANAEL",
+          "dept": "BAKEL",
+          "region": "TAMBACOUNDA",
+          "milieu": "RURAL",
+          "nbre_men": 46.4,
+          "lon": -12.507749,
+          "lat": 15.016417
+        },
+        {
+          "code": "51203040015",
+          "nom": "KOITALA ll",
+          "dept": "BAKEL",
+          "region": "TAMBACOUNDA",
+          "milieu": "URBAIN",
+          "nbre_men": 78.8,
+          "lon": -12.557095,
+          "lat": 15.018033
+        },
+        {
+          "code": "51101000004",
+          "nom": "YAGUINE",
+          "dept": "BAKEL",
+          "region": "TAMBACOUNDA",
+          "milieu": "URBAIN",
+          "nbre_men": 94.0,
+          "lon": -12.453838,
+          "lat": 14.907821
+        },
+        {
+          "code": "112201030045",
+          "nom": "DOUNDE",
+          "dept": "KANEL",
+          "region": "MATAM",
+          "milieu": "RURAL",
+          "nbre_men": 80.8,
+          "lon": -12.89527,
+          "lat": 15.063887
+        },
+        {
+          "code": "112201070003",
+          "nom": "SINTHIOU BALA",
+          "dept": "KANEL",
+          "region": "MATAM",
+          "milieu": "URBAIN",
+          "nbre_men": 59.6,
+          "lon": -12.915066,
+          "lat": 15.204008
+        },
+        {
+          "code": "112201060004",
+          "nom": "WAOUNDE I",
+          "dept": "KANEL",
+          "region": "MATAM",
+          "milieu": "URBAIN",
+          "nbre_men": 38.4,
+          "lon": -12.86439,
+          "lat": 15.267065
+        },
+        {
+          "code": "112202010011",
+          "nom": "BAPALEL",
+          "dept": "KANEL",
+          "region": "MATAM",
+          "milieu": "RURAL",
+          "nbre_men": 46.4,
+          "lon": -12.962377,
+          "lat": 15.465191
+        },
+        {
+          "code": "112201050002",
+          "nom": "CITE POSTE",
+          "dept": "KANEL",
+          "region": "MATAM",
+          "milieu": "URBAIN",
+          "nbre_men": 55.6,
+          "lon": -13.109357,
+          "lat": 15.55486
+        },
+        {
+          "code": "112202020005",
+          "nom": "THIEMPING",
+          "dept": "KANEL",
+          "region": "MATAM",
+          "milieu": "RURAL",
+          "nbre_men": 45.4,
+          "lon": -13.125362,
+          "lat": 15.593394
+        }
+      ]
+    },
+    {
+      "id": "EQ17",
+      "ordre": 17,
+      "nb_dr": 10,
+      "region_dominante": "KEDOUGOU",
+      "regions": [
+        "KEDOUGOU"
+      ],
+      "departements": [
+        "KEDOUGOU",
+        "SARAYA"
+      ],
+      "dr_list": [
+        {
+          "code": "133101000003",
+          "nom": "MOSQUEE",
+          "dept": "SARAYA",
+          "region": "KEDOUGOU",
+          "milieu": "URBAIN",
+          "nbre_men": 62.7,
+          "lon": -11.734465,
+          "lat": 12.824952
+        },
+        {
+          "code": "133202010015",
+          "nom": "DIEGOUNG-H2 KOBOKHOTO",
+          "dept": "SARAYA",
+          "region": "KEDOUGOU",
+          "milieu": "RURAL",
+          "nbre_men": 55.5,
+          "lon": -11.920309,
+          "lat": 13.294479
+        },
+        {
+          "code": "133202010004",
+          "nom": "KHOSSANTO",
+          "dept": "SARAYA",
+          "region": "KEDOUGOU",
+          "milieu": "RURAL",
+          "nbre_men": 193.9,
+          "lon": -11.977196,
+          "lat": 13.138713
+        },
+        {
+          "code": "133202020005",
+          "nom": "DOUTA",
+          "dept": "SARAYA",
+          "region": "KEDOUGOU",
+          "milieu": "RURAL",
+          "nbre_men": 94.9,
+          "lon": -11.792622,
+          "lat": 13.022937
+        },
+        {
+          "code": "133202030020",
+          "nom": "SABADOLA - SABODALA RECASEMENT",
+          "dept": "SARAYA",
+          "region": "KEDOUGOU",
+          "milieu": "RURAL",
+          "nbre_men": 387.7,
+          "lon": -12.265657,
+          "lat": 13.174976
+        },
+        {
+          "code": "131101000044",
+          "nom": "DINGUESSOU",
+          "dept": "KEDOUGOU",
+          "region": "KEDOUGOU",
+          "milieu": "URBAIN",
+          "nbre_men": 116.8,
+          "lon": -12.189,
+          "lat": 12.5623
+        },
+        {
+          "code": "131101000016",
+          "nom": "DANDEMAYO",
+          "dept": "KEDOUGOU",
+          "region": "KEDOUGOU",
+          "milieu": "URBAIN",
+          "nbre_men": 102.5,
+          "lon": -12.181873,
+          "lat": 12.550228
+        },
+        {
+          "code": "131101000009",
+          "nom": "DALABA",
+          "dept": "KEDOUGOU",
+          "region": "KEDOUGOU",
+          "milieu": "URBAIN",
+          "nbre_men": 111.7,
+          "lon": -12.174876,
+          "lat": 12.557474
+        },
+        {
+          "code": "131101000057",
+          "nom": "GADA DINGUESSOU",
+          "dept": "KEDOUGOU",
+          "region": "KEDOUGOU",
+          "milieu": "URBAIN",
+          "nbre_men": 200.8,
+          "lon": -12.180687,
+          "lat": 12.572008
+        },
+        {
+          "code": "131101000022",
+          "nom": "GOMBA",
+          "dept": "KEDOUGOU",
+          "region": "KEDOUGOU",
+          "milieu": "URBAIN",
+          "nbre_men": 102.5,
+          "lon": -12.197147,
+          "lat": 12.558614
+        }
+      ]
+    },
+    {
+      "id": "EQ18",
+      "ordre": 18,
+      "nb_dr": 10,
+      "region_dominante": "KEDOUGOU",
+      "regions": [
+        "KEDOUGOU"
+      ],
+      "departements": [
+        "KEDOUGOU",
+        "SARAYA"
+      ],
+      "dr_list": [
+        {
+          "code": "131202010002",
+          "nom": "AFIA DANDEMAYO-H1 BOUSSOURA",
+          "dept": "KEDOUGOU",
+          "region": "KEDOUGOU",
+          "milieu": "RURAL",
+          "nbre_men": 143.4,
+          "lon": -12.128986,
+          "lat": 12.549312
+        },
+        {
+          "code": "131201020021",
+          "nom": "BANTAKHOCOUTA",
+          "dept": "KEDOUGOU",
+          "region": "KEDOUGOU",
+          "milieu": "RURAL",
+          "nbre_men": 101.0,
+          "lon": -12.158012,
+          "lat": 12.750933
+        },
+        {
+          "code": "133202020026",
+          "nom": "MOURAN",
+          "dept": "SARAYA",
+          "region": "KEDOUGOU",
+          "milieu": "RURAL",
+          "nbre_men": 64.6,
+          "lon": -11.56895,
+          "lat": 13.232197
+        },
+        {
+          "code": "133201020001",
+          "nom": "BOUNSANKHOBA - SOMAYA",
+          "dept": "SARAYA",
+          "region": "KEDOUGOU",
+          "milieu": "RURAL",
+          "nbre_men": 80.8,
+          "lon": -11.977349,
+          "lat": 12.703851
+        },
+        {
+          "code": "133201020024",
+          "nom": "KHARAKHAINA",
+          "dept": "SARAYA",
+          "region": "KEDOUGOU",
+          "milieu": "RURAL",
+          "nbre_men": 120.2,
+          "lon": -11.505849,
+          "lat": 12.923804
+        },
+        {
+          "code": "131101000034",
+          "nom": "GOMBA",
+          "dept": "KEDOUGOU",
+          "region": "KEDOUGOU",
+          "milieu": "URBAIN",
+          "nbre_men": 130.1,
+          "lon": -12.215596,
+          "lat": 12.564129
+        },
+        {
+          "code": "131101000028",
+          "nom": "GOMBA",
+          "dept": "KEDOUGOU",
+          "region": "KEDOUGOU",
+          "milieu": "URBAIN",
+          "nbre_men": 144.5,
+          "lon": -12.210077,
+          "lat": 12.557333
+        },
+        {
+          "code": "131101000052",
+          "nom": "GADA DINGUESSOU",
+          "dept": "KEDOUGOU",
+          "region": "KEDOUGOU",
+          "milieu": "URBAIN",
+          "nbre_men": 129.1,
+          "lon": -12.189367,
+          "lat": 12.566099
+        },
+        {
+          "code": "131101000039",
+          "nom": "GADA DINGUESSOU",
+          "dept": "KEDOUGOU",
+          "region": "KEDOUGOU",
+          "milieu": "URBAIN",
+          "nbre_men": 312.5,
+          "lon": -12.198298,
+          "lat": 12.576673
+        },
+        {
+          "code": "131201010002",
+          "nom": "SINTHIOU ROUDJI - MERESSI - DAR SALAM",
+          "dept": "KEDOUGOU",
+          "region": "KEDOUGOU",
+          "milieu": "RURAL",
+          "nbre_men": 90.9,
+          "lon": -12.245098,
+          "lat": 12.525621
+        }
+      ]
+    },
+    {
+      "id": "EQ19",
+      "ordre": 19,
+      "nb_dr": 10,
+      "region_dominante": "KOLDA",
+      "regions": [
+        "KEDOUGOU",
+        "KOLDA"
+      ],
+      "departements": [
+        "KEDOUGOU",
+        "SALEMATA",
+        "VELINGARA"
+      ],
+      "dr_list": [
+        {
+          "code": "131201040008",
+          "nom": "ASSONI -  H1 SAMAL",
+          "dept": "KEDOUGOU",
+          "region": "KEDOUGOU",
+          "milieu": "RURAL",
+          "nbre_men": 142.4,
+          "lon": -12.529901,
+          "lat": 12.634508
+        },
+        {
+          "code": "132201020001",
+          "nom": "H1 LORI - H2 SAMBA NGAR - H3 LALIMOULI - H4 SAMBA NGAR DIAKHA - THIANKOYE",
+          "dept": "SALEMATA",
+          "region": "KEDOUGOU",
+          "milieu": "RURAL",
+          "nbre_men": 137.3,
+          "lon": -12.635134,
+          "lat": 12.616963
+        },
+        {
+          "code": "132101000003",
+          "nom": "COULOUBA",
+          "dept": "SALEMATA",
+          "region": "KEDOUGOU",
+          "milieu": "URBAIN",
+          "nbre_men": 194.1,
+          "lon": -12.822162,
+          "lat": 12.636207
+        },
+        {
+          "code": "131201030006",
+          "nom": "YAMOUSSA SEGOU",
+          "dept": "KEDOUGOU",
+          "region": "KEDOUGOU",
+          "milieu": "RURAL",
+          "nbre_men": 135.3,
+          "lon": -12.284472,
+          "lat": 12.423158
+        },
+        {
+          "code": "102201010002",
+          "nom": "THIOMOLOCK TOMBONG-THIOMOLOCK DIAM-H1 SINTHIANG YERO-SINTHIANG BAILO",
+          "dept": "VELINGARA",
+          "region": "KOLDA",
+          "milieu": "RURAL",
+          "nbre_men": 96.9,
+          "lon": -13.897716,
+          "lat": 13.102978
+        },
+        {
+          "code": "102201020003",
+          "nom": "MEDINA SEKOU-KANEBA PAKANE",
+          "dept": "VELINGARA",
+          "region": "KOLDA",
+          "milieu": "RURAL",
+          "nbre_men": 94.9,
+          "lon": -13.662625,
+          "lat": 12.951939
+        },
+        {
+          "code": "102201040020",
+          "nom": "DAROU SALAM MANDA",
+          "dept": "VELINGARA",
+          "region": "KOLDA",
+          "milieu": "RURAL",
+          "nbre_men": 162.6,
+          "lon": -13.80192,
+          "lat": 13.355907
+        },
+        {
+          "code": "102202020016",
+          "nom": "DIANAH-MADINA BOURE-BODORA-H2 GALLE DJIBY",
+          "dept": "VELINGARA",
+          "region": "KOLDA",
+          "milieu": "RURAL",
+          "nbre_men": 107.0,
+          "lon": -13.766161,
+          "lat": 12.722873
+        },
+        {
+          "code": "102201030023",
+          "nom": "MEDINA GOUNASS",
+          "dept": "VELINGARA",
+          "region": "KOLDA",
+          "milieu": "RURAL",
+          "nbre_men": 67.6,
+          "lon": -13.746241,
+          "lat": 13.114145
+        },
+        {
+          "code": "102201030073",
+          "nom": "MEDINA GOUNASS",
+          "dept": "VELINGARA",
+          "region": "KOLDA",
+          "milieu": "RURAL",
+          "nbre_men": 50.5,
+          "lon": -13.766959,
+          "lat": 13.144498
+        }
+      ]
+    },
+    {
+      "id": "EQ20",
+      "ordre": 20,
+      "nb_dr": 10,
+      "region_dominante": "TAMBACOUNDA",
+      "regions": [
+        "TAMBACOUNDA"
+      ],
+      "departements": [
+        "GOUDIRY",
+        "TAMBACOUNDA"
+      ],
+      "dr_list": [
+        {
+          "code": "53202020003",
+          "nom": "BOYNGUEL BAMBA",
+          "dept": "GOUDIRY",
+          "region": "TAMBACOUNDA",
+          "milieu": "RURAL",
+          "nbre_men": 68.7,
+          "lon": -12.966221,
+          "lat": 14.1179
+        },
+        {
+          "code": "53101000011",
+          "nom": "PLACE DU MARCHE-CITE DES ENSEIGNANTS",
+          "dept": "GOUDIRY",
+          "region": "TAMBACOUNDA",
+          "milieu": "URBAIN",
+          "nbre_men": 86.9,
+          "lon": -12.697026,
+          "lat": 14.188589
+        },
+        {
+          "code": "53204010013",
+          "nom": "SINTHIOU DIAWBES II (SINTHIOU OUMAR DIAM)",
+          "dept": "GOUDIRY",
+          "region": "TAMBACOUNDA",
+          "milieu": "RURAL",
+          "nbre_men": 48.5,
+          "lon": -13.597088,
+          "lat": 13.980874
+        },
+        {
+          "code": "52203020012",
+          "nom": "KOAR III(KOAR PROJET)",
+          "dept": "TAMBACOUNDA",
+          "region": "TAMBACOUNDA",
+          "milieu": "RURAL",
+          "nbre_men": 118.1,
+          "lon": -13.58405,
+          "lat": 13.307096
+        },
+        {
+          "code": "52101000128",
+          "nom": "SARE ISSA",
+          "dept": "TAMBACOUNDA",
+          "region": "TAMBACOUNDA",
+          "milieu": "URBAIN",
+          "nbre_men": 89.1,
+          "lon": -13.650715,
+          "lat": 13.764919
+        },
+        {
+          "code": "52101000088",
+          "nom": "DEPOT",
+          "dept": "TAMBACOUNDA",
+          "region": "TAMBACOUNDA",
+          "milieu": "URBAIN",
+          "nbre_men": 90.2,
+          "lon": -13.67867,
+          "lat": 13.768934
+        },
+        {
+          "code": "52101000108",
+          "nom": "PONT III",
+          "dept": "TAMBACOUNDA",
+          "region": "TAMBACOUNDA",
+          "milieu": "URBAIN",
+          "nbre_men": 128.1,
+          "lon": -13.656478,
+          "lat": 13.766692
+        },
+        {
+          "code": "52101000070",
+          "nom": "DIALLO BOUGOU",
+          "dept": "TAMBACOUNDA",
+          "region": "TAMBACOUNDA",
+          "milieu": "URBAIN",
+          "nbre_men": 160.9,
+          "lon": -13.669176,
+          "lat": 13.744728
+        },
+        {
+          "code": "52101000051",
+          "nom": "GOUREL DIADIE",
+          "dept": "TAMBACOUNDA",
+          "region": "TAMBACOUNDA",
+          "milieu": "URBAIN",
+          "nbre_men": 108.6,
+          "lon": -13.682957,
+          "lat": 13.761109
+        },
+        {
+          "code": "52101000147",
+          "nom": "SARE MOUDOU",
+          "dept": "TAMBACOUNDA",
+          "region": "TAMBACOUNDA",
+          "milieu": "URBAIN",
+          "nbre_men": 174.2,
+          "lon": -13.637881,
+          "lat": 13.770415
+        }
+      ]
+    },
+    {
+      "id": "EQ21",
+      "ordre": 21,
+      "nb_dr": 10,
+      "region_dominante": "TAMBACOUNDA",
+      "regions": [
+        "TAMBACOUNDA"
+      ],
+      "departements": [
+        "KOUMPENTOUM",
+        "TAMBACOUNDA"
+      ],
+      "dr_list": [
+        {
+          "code": "54101000003",
+          "nom": "GRANDE VILLE I",
+          "dept": "KOUMPENTOUM",
+          "region": "TAMBACOUNDA",
+          "milieu": "URBAIN",
+          "nbre_men": 109.2,
+          "lon": -14.561972,
+          "lat": 13.985831
+        },
+        {
+          "code": "54201030021",
+          "nom": "GALLE-TOUBA SENE-ABY SAMAOU",
+          "dept": "KOUMPENTOUM",
+          "region": "TAMBACOUNDA",
+          "milieu": "RURAL",
+          "nbre_men": 75.7,
+          "lon": -14.436237,
+          "lat": 13.907279
+        },
+        {
+          "code": "52202030023",
+          "nom": "DIANE KOUNDA-BARSAFO",
+          "dept": "TAMBACOUNDA",
+          "region": "TAMBACOUNDA",
+          "milieu": "RURAL",
+          "nbre_men": 77.7,
+          "lon": -14.579888,
+          "lat": 13.686395
+        },
+        {
+          "code": "52201010040",
+          "nom": "SINTHIOU DAWADY - PASS KELIMANE",
+          "dept": "TAMBACOUNDA",
+          "region": "TAMBACOUNDA",
+          "milieu": "RURAL",
+          "nbre_men": 74.7,
+          "lon": -13.93708,
+          "lat": 14.183342
+        },
+        {
+          "code": "52201010015",
+          "nom": "KOUSSANAR SOCE",
+          "dept": "TAMBACOUNDA",
+          "region": "TAMBACOUNDA",
+          "milieu": "RURAL",
+          "nbre_men": 127.2,
+          "lon": -14.056322,
+          "lat": 13.874272
+        },
+        {
+          "code": "54202040020",
+          "nom": "H1 SARE HAMADY DIALLO-H3 SARE TAHE-H4 SARE DEMBA DIALLO (SARE GUELELE)",
+          "dept": "KOUMPENTOUM",
+          "region": "TAMBACOUNDA",
+          "milieu": "RURAL",
+          "nbre_men": 88.9,
+          "lon": -14.455519,
+          "lat": 14.426361
+        },
+        {
+          "code": "54202010018",
+          "nom": "H1 SARE BAMBO - H2 SARE HAMAT - H3 THIEWELE - H5 WOURO THIERNO MANSOUR - H6 WENDOU SENO - H6 WOURO SIDEL(WARRY) - H7 WENDOU BIABY - H7 WOURO KALIDOU",
+          "dept": "KOUMPENTOUM",
+          "region": "TAMBACOUNDA",
+          "milieu": "RURAL",
+          "nbre_men": 106.0,
+          "lon": -13.870261,
+          "lat": 14.407856
+        },
+        {
+          "code": "52101000031",
+          "nom": "DAYIBATOU",
+          "dept": "TAMBACOUNDA",
+          "region": "TAMBACOUNDA",
+          "milieu": "URBAIN",
+          "nbre_men": 132.2,
+          "lon": -13.702278,
+          "lat": 13.770451
+        },
+        {
+          "code": "52101000015",
+          "nom": "SARE GUILEL",
+          "dept": "TAMBACOUNDA",
+          "region": "TAMBACOUNDA",
+          "milieu": "URBAIN",
+          "nbre_men": 182.4,
+          "lon": -13.682314,
+          "lat": 13.797574
+        },
+        {
+          "code": "52202020005",
+          "nom": "SARE DOUNDOU-SINTHIOU SAMBA DIOUKA-THIEVAL",
+          "dept": "TAMBACOUNDA",
+          "region": "TAMBACOUNDA",
+          "milieu": "RURAL",
+          "nbre_men": 103.0,
+          "lon": -14.073323,
+          "lat": 13.727022
+        }
+      ]
+    },
+    {
+      "id": "EQ22",
+      "ordre": 22,
+      "nb_dr": 10,
+      "region_dominante": "KAFFRINE",
+      "regions": [
+        "KAFFRINE",
+        "TAMBACOUNDA"
+      ],
+      "departements": [
+        "KOUMPENTOUM",
+        "KOUNGHEUL",
+        "MALEM HODDAR"
+      ],
+      "dr_list": [
+        {
+          "code": "124101000012",
+          "nom": "TAIBA",
+          "dept": "MALEM HODDAR",
+          "region": "KAFFRINE",
+          "milieu": "URBAIN",
+          "nbre_men": 56.6,
+          "lon": -15.30397,
+          "lat": 14.086104
+        },
+        {
+          "code": "54201010004",
+          "nom": "KISSANG, H1 AEROPORT, NDIAWENE PEULH",
+          "dept": "KOUMPENTOUM",
+          "region": "TAMBACOUNDA",
+          "milieu": "RURAL",
+          "nbre_men": 93.9,
+          "lon": -14.595018,
+          "lat": 13.854972
+        },
+        {
+          "code": "124201040001",
+          "nom": "DAROU SALAM PAFFA-LINGUERE PAFFA--NDEMENE PAFFA-SANOU PAFFA-THINDY BOYE DEME-THINDY DIALIGUE",
+          "dept": "MALEM HODDAR",
+          "region": "KAFFRINE",
+          "milieu": "RURAL",
+          "nbre_men": 110.1,
+          "lon": -15.181935,
+          "lat": 14.275012
+        },
+        {
+          "code": "124202020035",
+          "nom": "NGUETHIE",
+          "dept": "MALEM HODDAR",
+          "region": "KAFFRINE",
+          "milieu": "RURAL",
+          "nbre_men": 67.6,
+          "lon": -15.234246,
+          "lat": 14.007072
+        },
+        {
+          "code": "123202010017",
+          "nom": "COURA MOURIDE- H1 PEULGA",
+          "dept": "KOUNGHEUL",
+          "region": "KAFFRINE",
+          "milieu": "RURAL",
+          "nbre_men": 88.9,
+          "lon": -14.685191,
+          "lat": 14.162786
+        },
+        {
+          "code": "123101000015",
+          "nom": "MALI",
+          "dept": "KOUNGHEUL",
+          "region": "KAFFRINE",
+          "milieu": "URBAIN",
+          "nbre_men": 104.1,
+          "lon": -14.803347,
+          "lat": 13.971453
+        },
+        {
+          "code": "123101000028",
+          "nom": "KOUNGHEUL VILLE 1",
+          "dept": "KOUNGHEUL",
+          "region": "KAFFRINE",
+          "milieu": "URBAIN",
+          "nbre_men": 121.3,
+          "lon": -14.799981,
+          "lat": 13.980785
+        },
+        {
+          "code": "123201010002",
+          "nom": "KHOSNANE",
+          "dept": "KOUNGHEUL",
+          "region": "KAFFRINE",
+          "milieu": "RURAL",
+          "nbre_men": 59.6,
+          "lon": -15.005382,
+          "lat": 13.814849
+        },
+        {
+          "code": "123203030007",
+          "nom": "DIMISKHA",
+          "dept": "KOUNGHEUL",
+          "region": "KAFFRINE",
+          "milieu": "RURAL",
+          "nbre_men": 81.8,
+          "lon": -15.176094,
+          "lat": 13.926417
+        },
+        {
+          "code": "123203010025",
+          "nom": "BOUDIOURGUEL-H2 KEUR NIADA-H1 PEULGA",
+          "dept": "KOUNGHEUL",
+          "region": "KAFFRINE",
+          "milieu": "RURAL",
+          "nbre_men": 86.8,
+          "lon": -15.023025,
+          "lat": 14.260946
+        }
+      ]
+    },
+    {
+      "id": "EQ23",
+      "ordre": 23,
+      "nb_dr": 10,
+      "region_dominante": "KAFFRINE",
+      "regions": [
+        "KAFFRINE"
+      ],
+      "departements": [
+        "BIRKELANE",
+        "KAFFRINE"
+      ],
+      "dr_list": [
+        {
+          "code": "121101000037",
+          "nom": "KAFFRINE NORD",
+          "dept": "KAFFRINE",
+          "region": "KAFFRINE",
+          "milieu": "URBAIN",
+          "nbre_men": 137.3,
+          "lon": -15.53669,
+          "lat": 14.115825
+        },
+        {
+          "code": "121101000024",
+          "nom": "DIAMAGUENE TP",
+          "dept": "KAFFRINE",
+          "region": "KAFFRINE",
+          "milieu": "URBAIN",
+          "nbre_men": 118.9,
+          "lon": -15.556087,
+          "lat": 14.095122
+        },
+        {
+          "code": "121101000011",
+          "nom": "DIAMAGUENE CENTRE",
+          "dept": "KAFFRINE",
+          "region": "KAFFRINE",
+          "milieu": "URBAIN",
+          "nbre_men": 100.4,
+          "lon": -15.542324,
+          "lat": 14.092659
+        },
+        {
+          "code": "121202050001",
+          "nom": "MINNA",
+          "dept": "KAFFRINE",
+          "region": "KAFFRINE",
+          "milieu": "URBAIN",
+          "nbre_men": 73.8,
+          "lon": -15.435447,
+          "lat": 13.837533
+        },
+        {
+          "code": "121202040009",
+          "nom": "NDANKH-H1 SANTHIE-KEUR BATHIE",
+          "dept": "KAFFRINE",
+          "region": "KAFFRINE",
+          "milieu": "RURAL",
+          "nbre_men": 50.5,
+          "lon": -15.498862,
+          "lat": 13.880521
+        },
+        {
+          "code": "122201010006",
+          "nom": "NGAMBOU-THIDY DIEYE-H1 GORIA",
+          "dept": "BIRKELANE",
+          "region": "KAFFRINE",
+          "milieu": "RURAL",
+          "nbre_men": 50.5,
+          "lon": -15.821511,
+          "lat": 14.19311
+        },
+        {
+          "code": "122201020009",
+          "nom": "WEYNDE",
+          "dept": "BIRKELANE",
+          "region": "KAFFRINE",
+          "milieu": "RURAL",
+          "nbre_men": 97.9,
+          "lon": -15.651303,
+          "lat": 14.176546
+        },
+        {
+          "code": "121202030014",
+          "nom": "MADINA BAMBA - H1 SANTHIE EL HADJI MALICK",
+          "dept": "KAFFRINE",
+          "region": "KAFFRINE",
+          "milieu": "RURAL",
+          "nbre_men": 52.5,
+          "lon": -15.236132,
+          "lat": 13.866836
+        },
+        {
+          "code": "122202020004",
+          "nom": "KEBE KEUR BABOU-LANTA-H2 TEUGUEGUA-H3 LOUMENE PEULGA",
+          "dept": "BIRKELANE",
+          "region": "KAFFRINE",
+          "milieu": null,
+          "nbre_men": 87.8,
+          "lon": -15.592587,
+          "lat": 14.073316
+        },
+        {
+          "code": "122101000006",
+          "nom": "SANTHIABA",
+          "dept": "BIRKELANE",
+          "region": "KAFFRINE",
+          "milieu": "URBAIN",
+          "nbre_men": 119.3,
+          "lon": -15.746468,
+          "lat": 14.139659
+        }
+      ]
+    },
+    {
+      "id": "EQ24",
+      "ordre": 24,
+      "nb_dr": 10,
+      "region_dominante": "DIOURBEL",
+      "regions": [
+        "DIOURBEL",
+        "FATICK",
+        "KAFFRINE"
+      ],
+      "departements": [
+        "GOSSAS",
+        "KAFFRINE",
+        "MALEM HODDAR",
+        "MBACKE"
+      ],
+      "dr_list": [
+        {
+          "code": "93201010004",
+          "nom": "GAYNA MBAR",
+          "dept": "GOSSAS",
+          "region": "FATICK",
+          "milieu": "RURAL",
+          "nbre_men": 62.6,
+          "lon": -15.647966,
+          "lat": 14.692536
+        },
+        {
+          "code": "121201020006",
+          "nom": "H6 BÉDÉ, H7 KEUR SAMBA DIOP, H5 BAP, H1 THIARENE, H2 KEBE",
+          "dept": "KAFFRINE",
+          "region": "KAFFRINE",
+          "milieu": "RURAL",
+          "nbre_men": 77.7,
+          "lon": -15.554322,
+          "lat": 14.434886
+        },
+        {
+          "code": "33101000029",
+          "nom": "NDOYENE",
+          "dept": "MBACKE",
+          "region": "DIOURBEL",
+          "milieu": "URBAIN",
+          "nbre_men": 78.9,
+          "lon": -15.900953,
+          "lat": 14.797403
+        },
+        {
+          "code": "33203010017",
+          "nom": "KAMBEL",
+          "dept": "MBACKE",
+          "region": "DIOURBEL",
+          "milieu": "RURAL",
+          "nbre_men": 53.5,
+          "lon": -15.585117,
+          "lat": 14.754328
+        },
+        {
+          "code": "33202050056",
+          "nom": "TOUBA MOSQUEE",
+          "dept": "MBACKE",
+          "region": "DIOURBEL",
+          "milieu": "RURAL",
+          "nbre_men": 71.7,
+          "lon": -15.860964,
+          "lat": 14.843507
+        },
+        {
+          "code": "33202050192",
+          "nom": "NDINDY ABDOU",
+          "dept": "MBACKE",
+          "region": "DIOURBEL",
+          "milieu": "RURAL",
+          "nbre_men": 132.2,
+          "lon": -15.811038,
+          "lat": 14.886555
+        },
+        {
+          "code": "33202051187",
+          "nom": "H4 DIALAL-H1 LAMBY GADIO",
+          "dept": "MBACKE",
+          "region": "DIOURBEL",
+          "milieu": "RURAL",
+          "nbre_men": 212.1,
+          "lon": -15.844303,
+          "lat": 14.935275
+        },
+        {
+          "code": "33202050989",
+          "nom": "DAROU MARNANE",
+          "dept": "MBACKE",
+          "region": "DIOURBEL",
+          "milieu": "RURAL",
+          "nbre_men": 71.7,
+          "lon": -15.88142,
+          "lat": 14.838347
+        },
+        {
+          "code": "33202050846",
+          "nom": "TOUBA NDIAREME",
+          "dept": "MBACKE",
+          "region": "DIOURBEL",
+          "milieu": "RURAL",
+          "nbre_men": 100.4,
+          "lon": -15.908363,
+          "lat": 14.823463
+        },
+        {
+          "code": "124201010003",
+          "nom": "DEPE-H7 DAROU FALL (WENDOU)",
+          "dept": "MALEM HODDAR",
+          "region": "KAFFRINE",
+          "milieu": "RURAL",
+          "nbre_men": 57.6,
+          "lon": -15.401825,
+          "lat": 14.699635
+        }
+      ]
+    },
+    {
+      "id": "EQ25",
+      "ordre": 25,
+      "nb_dr": 10,
+      "region_dominante": "DIOURBEL",
+      "regions": [
+        "DIOURBEL"
+      ],
+      "departements": [
+        "DIOURBEL",
+        "MBACKE"
+      ],
+      "dr_list": [
+        {
+          "code": "32202030015",
+          "nom": "NDEUKSI-NDIONAYE",
+          "dept": "DIOURBEL",
+          "region": "DIOURBEL",
+          "milieu": "RURAL",
+          "nbre_men": 101.0,
+          "lon": -16.168805,
+          "lat": 14.733794
+        },
+        {
+          "code": "32101000056",
+          "nom": "MEDINATOUL (KEUR GOUMACK)",
+          "dept": "DIOURBEL",
+          "region": "DIOURBEL",
+          "milieu": "URBAIN",
+          "nbre_men": 123.0,
+          "lon": -16.227022,
+          "lat": 14.654391
+        },
+        {
+          "code": "32202010008",
+          "nom": "KANDJI-PETIT MBEYE-TENE-NIANGHE-H1 KEUR NDIAGA SARR-TAWA  MBAYAR",
+          "dept": "DIOURBEL",
+          "region": "DIOURBEL",
+          "milieu": "RURAL",
+          "nbre_men": 67.6,
+          "lon": -16.133695,
+          "lat": 14.785582
+        },
+        {
+          "code": "33201030008",
+          "nom": "MBAGNE SEO-H1 THIEWA-H2 BOKI TOKI-H3 FORAGE LAMA",
+          "dept": "MBACKE",
+          "region": "DIOURBEL",
+          "milieu": "RURAL",
+          "nbre_men": 64.6,
+          "lon": -15.902606,
+          "lat": 14.621276
+        },
+        {
+          "code": "33201060003",
+          "nom": "SEO TOURE-H2 SEO SERERE-H3 KEUR DJIBY SENE-H4 KEUR SAMBA NGOM",
+          "dept": "MBACKE",
+          "region": "DIOURBEL",
+          "milieu": "RURAL",
+          "nbre_men": 61.6,
+          "lon": -15.898486,
+          "lat": 14.592063
+        },
+        {
+          "code": "33202050326",
+          "nom": "DAROU KHOUDOSS",
+          "dept": "MBACKE",
+          "region": "DIOURBEL",
+          "milieu": "RURAL",
+          "nbre_men": 79.9,
+          "lon": -15.892161,
+          "lat": 14.878913
+        },
+        {
+          "code": "33202050469",
+          "nom": "ALIEU",
+          "dept": "MBACKE",
+          "region": "DIOURBEL",
+          "milieu": "RURAL",
+          "nbre_men": 111.7,
+          "lon": -15.889678,
+          "lat": 14.91016
+        },
+        {
+          "code": "33202050576",
+          "nom": "BOUKHATOUL MOUBARACK",
+          "dept": "MBACKE",
+          "region": "DIOURBEL",
+          "milieu": "RURAL",
+          "nbre_men": 111.7,
+          "lon": -15.951171,
+          "lat": 14.859753
+        },
+        {
+          "code": "33202050693",
+          "nom": "MADIYANA",
+          "dept": "MBACKE",
+          "region": "DIOURBEL",
+          "milieu": "RURAL",
+          "nbre_men": 79.9,
+          "lon": -15.900387,
+          "lat": 14.867144
+        },
+        {
+          "code": "32202050007",
+          "nom": null,
+          "dept": "DIOURBEL",
+          "region": "DIOURBEL",
+          "milieu": "RURAL",
+          "nbre_men": 80.8,
+          "lon": -16.237349,
+          "lat": 14.699143
+        }
+      ]
+    },
+    {
+      "id": "EQ26",
+      "ordre": 26,
+      "nb_dr": 10,
+      "region_dominante": "FATICK",
+      "regions": [
+        "FATICK",
+        "KAOLACK"
+      ],
+      "departements": [
+        "FATICK",
+        "KAOLACK"
+      ],
+      "dr_list": [
+        {
+          "code": "91201010013",
+          "nom": "MAROUTH- H7 KEUR MASSAR- H6 KEUR BESS",
+          "dept": "FATICK",
+          "region": "FATICK",
+          "milieu": "RURAL",
+          "nbre_men": 95.9,
+          "lon": -16.26725,
+          "lat": 14.380449
+        },
+        {
+          "code": "91102000012",
+          "nom": "DIONGFA",
+          "dept": "FATICK",
+          "region": "FATICK",
+          "milieu": "URBAIN",
+          "nbre_men": 133.4,
+          "lon": -16.654941,
+          "lat": 14.182483
+        },
+        {
+          "code": "91101000028",
+          "nom": "NDIANDIAYE I",
+          "dept": "FATICK",
+          "region": "FATICK",
+          "milieu": "URBAIN",
+          "nbre_men": 161.7,
+          "lon": -16.415487,
+          "lat": 14.327475
+        },
+        {
+          "code": "91101000010",
+          "nom": "DARAL",
+          "dept": "FATICK",
+          "region": "FATICK",
+          "milieu": "URBAIN",
+          "nbre_men": 104.1,
+          "lon": -16.406569,
+          "lat": 14.340414
+        },
+        {
+          "code": "91202010030",
+          "nom": "H1 NIANGA",
+          "dept": "FATICK",
+          "region": "FATICK",
+          "milieu": "RURAL",
+          "nbre_men": 116.1,
+          "lon": -16.749487,
+          "lat": 14.116833
+        },
+        {
+          "code": "91204020017",
+          "nom": "DIOUROUP(NDIODIONE)",
+          "dept": "FATICK",
+          "region": "FATICK",
+          "milieu": "RURAL",
+          "nbre_men": 94.9,
+          "lon": -16.526364,
+          "lat": 14.373703
+        },
+        {
+          "code": "91202030006",
+          "nom": "PALMARIN DIAKHANOR",
+          "dept": "FATICK",
+          "region": "FATICK",
+          "milieu": "RURAL",
+          "nbre_men": 92.9,
+          "lon": -16.749323,
+          "lat": 13.984508
+        },
+        {
+          "code": "91202020013",
+          "nom": "H1 FASSANE - H2 THIEMANE - H1 MBINE MODY - H4 MBINE MODY",
+          "dept": "FATICK",
+          "region": "FATICK",
+          "milieu": "RURAL",
+          "nbre_men": 79.8,
+          "lon": -16.67384,
+          "lat": 14.31171
+        },
+        {
+          "code": "91204030016",
+          "nom": "H1 GANDIAYE - H1 KHAOUL - H2 ROF BACOBOF",
+          "dept": "FATICK",
+          "region": "FATICK",
+          "milieu": "RURAL",
+          "nbre_men": 77.7,
+          "lon": -16.68975,
+          "lat": 14.402453
+        },
+        {
+          "code": "61203030008",
+          "nom": "H1 KEUR DIABEL - H2 KABORY - H2 KEUR MANDAME - H4 KEUR NGAYO - KEUR GALOUP - KEUR SOUKHOUPE",
+          "dept": "KAOLACK",
+          "region": "KAOLACK",
+          "milieu": "RURAL",
+          "nbre_men": 71.7,
+          "lon": -16.259888,
+          "lat": 14.29194
+        }
+      ]
+    },
+    {
+      "id": "EQ27",
+      "ordre": 27,
+      "nb_dr": 10,
+      "region_dominante": "FATICK",
+      "regions": [
+        "FATICK",
+        "KAOLACK"
+      ],
+      "departements": [
+        "FOUNDIOUGNE",
+        "KAOLACK"
+      ],
+      "dr_list": [
+        {
+          "code": "92201040007",
+          "nom": "MBAM",
+          "dept": "FOUNDIOUGNE",
+          "region": "FATICK",
+          "milieu": "RURAL",
+          "nbre_men": 126.2,
+          "lon": -16.429279,
+          "lat": 14.112854
+        },
+        {
+          "code": "92203040003",
+          "nom": "DIAGLE",
+          "dept": "FOUNDIOUGNE",
+          "region": "FATICK",
+          "milieu": "RURAL",
+          "nbre_men": 85.8,
+          "lon": -16.373735,
+          "lat": 13.849917
+        },
+        {
+          "code": "92201020005",
+          "nom": "KEBE COUDE - PASSY MBITEYENE",
+          "dept": "FOUNDIOUGNE",
+          "region": "FATICK",
+          "milieu": "RURAL",
+          "nbre_men": 83.8,
+          "lon": -16.305499,
+          "lat": 13.948021
+        },
+        {
+          "code": "92202020003",
+          "nom": "DIONEWAR",
+          "dept": "FOUNDIOUGNE",
+          "region": "FATICK",
+          "milieu": "RURAL",
+          "nbre_men": 105.0,
+          "lon": -16.698249,
+          "lat": 13.879778
+        },
+        {
+          "code": "92203050004",
+          "nom": "MEDINE",
+          "dept": "FOUNDIOUGNE",
+          "region": "FATICK",
+          "milieu": "URBAIN",
+          "nbre_men": 111.2,
+          "lon": -16.422848,
+          "lat": 13.614718
+        },
+        {
+          "code": "92203050027",
+          "nom": "ESCALE II",
+          "dept": "FOUNDIOUGNE",
+          "region": "FATICK",
+          "milieu": "URBAIN",
+          "nbre_men": 131.4,
+          "lon": -16.430638,
+          "lat": 13.603541
+        },
+        {
+          "code": "92201070003",
+          "nom": "SINDIANE 2 & BAAK 1",
+          "dept": "FOUNDIOUGNE",
+          "region": "FATICK",
+          "milieu": "URBAIN",
+          "nbre_men": 69.7,
+          "lon": -16.479258,
+          "lat": 14.08676
+        },
+        {
+          "code": "92203010011",
+          "nom": "KEUR SERIGNE KORKA",
+          "dept": "FOUNDIOUGNE",
+          "region": "FATICK",
+          "milieu": "RURAL",
+          "nbre_men": 61.6,
+          "lon": -16.281446,
+          "lat": 13.767958
+        },
+        {
+          "code": "92102000006",
+          "nom": "DIAMAGUENE CENTRE 2",
+          "dept": "FOUNDIOUGNE",
+          "region": "FATICK",
+          "milieu": "URBAIN",
+          "nbre_men": 86.9,
+          "lon": -16.358432,
+          "lat": 13.882648
+        },
+        {
+          "code": "61203020020",
+          "nom": "NDALANE BAMBARA - SOB YEDIME",
+          "dept": "KAOLACK",
+          "region": "KAOLACK",
+          "milieu": "RURAL",
+          "nbre_men": 73.7,
+          "lon": -16.191439,
+          "lat": 14.295806
+        }
+      ]
+    },
+    {
+      "id": "EQ28",
+      "ordre": 28,
+      "nb_dr": 10,
+      "region_dominante": "KAOLACK",
+      "regions": [
+        "FATICK",
+        "KAOLACK"
+      ],
+      "departements": [
+        "GOSSAS",
+        "GUINGUINEO",
+        "KAOLACK"
+      ],
+      "dr_list": [
+        {
+          "code": "93101000017",
+          "nom": "DIAKHAO",
+          "dept": "GOSSAS",
+          "region": "FATICK",
+          "milieu": "URBAIN",
+          "nbre_men": 111.2,
+          "lon": -16.070742,
+          "lat": 14.489664
+        },
+        {
+          "code": "93202010011",
+          "nom": "H3 OWANDO -  (YOKHOC_DIOUDY PEULH) H1 KEUR MAMADOU KA -  H2 KEUR IBRAHIMA SOW -  DIOUDY PEULH _- H4 TEOUROU NGARY",
+          "dept": "GOSSAS",
+          "region": "FATICK",
+          "milieu": "RURAL",
+          "nbre_men": 83.8,
+          "lon": -15.897649,
+          "lat": 14.461919
+        },
+        {
+          "code": "63101000022",
+          "nom": "THERERE",
+          "dept": "GUINGUINEO",
+          "region": "KAOLACK",
+          "milieu": "URBAIN",
+          "nbre_men": 83.9,
+          "lon": -15.938219,
+          "lat": 14.262576
+        },
+        {
+          "code": "63202010012",
+          "nom": "GAGNICK KHODJIL II",
+          "dept": "GUINGUINEO",
+          "region": "KAOLACK",
+          "milieu": "RURAL",
+          "nbre_men": 46.4,
+          "lon": -15.997318,
+          "lat": 14.315409
+        },
+        {
+          "code": "63202030001",
+          "nom": "SANGHAI-NGALAGNE-MBOCKY NDIEME",
+          "dept": "GUINGUINEO",
+          "region": "KAOLACK",
+          "milieu": "RURAL",
+          "nbre_men": 68.7,
+          "lon": -16.114043,
+          "lat": 14.277607
+        },
+        {
+          "code": "61101000149",
+          "nom": "NDORONG SADAGA",
+          "dept": "KAOLACK",
+          "region": "KAOLACK",
+          "milieu": "URBAIN",
+          "nbre_men": 87.1,
+          "lon": -16.076682,
+          "lat": 14.163158
+        },
+        {
+          "code": "61101000025",
+          "nom": "PARCELLES ASSAINIES",
+          "dept": "KAOLACK",
+          "region": "KAOLACK",
+          "milieu": "URBAIN",
+          "nbre_men": 143.5,
+          "lon": -16.098216,
+          "lat": 14.155763
+        },
+        {
+          "code": "61101000061",
+          "nom": "NIMZATT",
+          "dept": "KAOLACK",
+          "region": "KAOLACK",
+          "milieu": "URBAIN",
+          "nbre_men": 110.7,
+          "lon": -16.090774,
+          "lat": 14.160402
+        },
+        {
+          "code": "61101000281",
+          "nom": "THIOFFACK",
+          "dept": "KAOLACK",
+          "region": "KAOLACK",
+          "milieu": "URBAIN",
+          "nbre_men": 104.5,
+          "lon": -16.06264,
+          "lat": 14.170249
+        },
+        {
+          "code": "61203050001",
+          "nom": "GUINAW RAILS",
+          "dept": "KAOLACK",
+          "region": "KAOLACK",
+          "milieu": "URBAIN",
+          "nbre_men": 103.1,
+          "lon": -16.156994,
+          "lat": 14.177519
+        }
+      ]
+    },
+    {
+      "id": "EQ29",
+      "ordre": 29,
+      "nb_dr": 10,
+      "region_dominante": "KAOLACK",
+      "regions": [
+        "KAOLACK"
+      ],
+      "departements": [
+        "KAOLACK",
+        "NIORO"
+      ],
+      "dr_list": [
+        {
+          "code": "62203030023",
+          "nom": "PANE MOMATH",
+          "dept": "NIORO",
+          "region": "KAOLACK",
+          "milieu": null,
+          "nbre_men": 61.6,
+          "lon": -16.012963,
+          "lat": 13.748457
+        },
+        {
+          "code": "62203010017",
+          "nom": "NDIAGNE WALO",
+          "dept": "NIORO",
+          "region": "KAOLACK",
+          "milieu": "RURAL",
+          "nbre_men": 78.8,
+          "lon": -15.998447,
+          "lat": 13.676047
+        },
+        {
+          "code": "62202010008",
+          "nom": "NDIAWARA AL KALY",
+          "dept": "NIORO",
+          "region": "KAOLACK",
+          "milieu": "RURAL",
+          "nbre_men": 95.9,
+          "lon": -16.008914,
+          "lat": 13.791537
+        },
+        {
+          "code": "62203020003",
+          "nom": "KEUR DAME",
+          "dept": "NIORO",
+          "region": "KAOLACK",
+          "milieu": "RURAL",
+          "nbre_men": 63.6,
+          "lon": -16.181268,
+          "lat": 13.84458
+        },
+        {
+          "code": "61101000105",
+          "nom": "TABAGOYE II",
+          "dept": "KAOLACK",
+          "region": "KAOLACK",
+          "milieu": "URBAIN",
+          "nbre_men": 85.0,
+          "lon": -16.074119,
+          "lat": 14.153389
+        },
+        {
+          "code": "61101000188",
+          "nom": "DAROU SALAM NDANGANE",
+          "dept": "KAOLACK",
+          "region": "KAOLACK",
+          "milieu": "URBAIN",
+          "nbre_men": 139.4,
+          "lon": -16.069098,
+          "lat": 14.13104
+        },
+        {
+          "code": "61101000235",
+          "nom": "DIALEGNE II",
+          "dept": "KAOLACK",
+          "region": "KAOLACK",
+          "milieu": "URBAIN",
+          "nbre_men": 91.2,
+          "lon": -16.06689,
+          "lat": 14.149738
+        },
+        {
+          "code": "61102000016",
+          "nom": "FASS KAHONE",
+          "dept": "KAOLACK",
+          "region": "KAOLACK",
+          "milieu": "URBAIN",
+          "nbre_men": 88.9,
+          "lon": -16.046066,
+          "lat": 14.159748
+        },
+        {
+          "code": "61202030007",
+          "nom": "NGONDY",
+          "dept": "KAOLACK",
+          "region": "KAOLACK",
+          "milieu": "RURAL",
+          "nbre_men": 51.5,
+          "lon": -15.967627,
+          "lat": 13.903212
+        },
+        {
+          "code": "61202010024",
+          "nom": "KEUR ABDOU KHOULE - KEUR ABDOU KHOULE",
+          "dept": "KAOLACK",
+          "region": "KAOLACK",
+          "milieu": "RURAL",
+          "nbre_men": 69.7,
+          "lon": -15.962235,
+          "lat": 14.023331
+        }
+      ]
+    },
+    {
+      "id": "EQ30",
+      "ordre": 30,
+      "nb_dr": 10,
+      "region_dominante": "KOLDA",
+      "regions": [
+        "KOLDA"
+      ],
+      "departements": [
+        "KOLDA",
+        "VELINGARA"
+      ],
+      "dr_list": [
+        {
+          "code": "101202030003",
+          "nom": "DIANKANCOUNDA SOUTOUKOU-DIANKANCOUNDA MAOUNDE-MISSIRAH KALIDIOGO-SINTHIANG DIOUMA DIAO-DOUBEL SA MBALLO (MBALLOCOUNDA)-SINTHIANG SEYDOU",
+          "dept": "KOLDA",
+          "region": "KOLDA",
+          "milieu": "RURAL",
+          "nbre_men": 95.9,
+          "lon": -14.365958,
+          "lat": 13.018415
+        },
+        {
+          "code": "101202030013",
+          "nom": "MAMPATIM",
+          "dept": "KOLDA",
+          "region": "KOLDA",
+          "milieu": "RURAL",
+          "nbre_men": 103.0,
+          "lon": -14.358153,
+          "lat": 12.884406
+        },
+        {
+          "code": "102101000016",
+          "nom": "HAFIA",
+          "dept": "VELINGARA",
+          "region": "KOLDA",
+          "milieu": "URBAIN",
+          "nbre_men": 154.6,
+          "lon": -14.116755,
+          "lat": 13.155961
+        },
+        {
+          "code": "102101000041",
+          "nom": "CHÄTEAU D'EAU",
+          "dept": "VELINGARA",
+          "region": "KOLDA",
+          "milieu": "URBAIN",
+          "nbre_men": 83.9,
+          "lon": -14.108644,
+          "lat": 13.159097
+        },
+        {
+          "code": "102202010001",
+          "nom": "SARE KANTA-DEMOUSSOR-H1 DEMOUSSOR DEMBA-H2 DEMOUSSOR ANSOU",
+          "dept": "VELINGARA",
+          "region": "KOLDA",
+          "milieu": "RURAL",
+          "nbre_men": 52.5,
+          "lon": -14.287281,
+          "lat": 12.697211
+        },
+        {
+          "code": "102203060003",
+          "nom": "THIANFARA KOBA-THIANFARA MAOUNDE-KOULANDIALA",
+          "dept": "VELINGARA",
+          "region": "KOLDA",
+          "milieu": "URBAIN",
+          "nbre_men": 107.1,
+          "lon": -14.078014,
+          "lat": 12.911173
+        },
+        {
+          "code": "102203050020",
+          "nom": "DIAOBE 2",
+          "dept": "VELINGARA",
+          "region": "KOLDA",
+          "milieu": "URBAIN",
+          "nbre_men": 128.4,
+          "lon": -14.150155,
+          "lat": 12.916852
+        },
+        {
+          "code": "101202020018",
+          "nom": "THIEDELY",
+          "dept": "KOLDA",
+          "region": "KOLDA",
+          "milieu": "RURAL",
+          "nbre_men": 91.9,
+          "lon": -14.41655,
+          "lat": 12.735859
+        },
+        {
+          "code": "101101000086",
+          "nom": "GADAPARA",
+          "dept": "KOLDA",
+          "region": "KOLDA",
+          "milieu": "URBAIN",
+          "nbre_men": 118.9,
+          "lon": -14.944907,
+          "lat": 12.890905
+        },
+        {
+          "code": "101101000030",
+          "nom": "SINTHIANG  IDRISSA",
+          "dept": "KOLDA",
+          "region": "KOLDA",
+          "milieu": "URBAIN",
+          "nbre_men": 93.2,
+          "lon": -14.945509,
+          "lat": 12.874005
+        }
+      ]
+    },
+    {
+      "id": "EQ31",
+      "ordre": 31,
+      "nb_dr": 10,
+      "region_dominante": "KOLDA",
+      "regions": [
+        "KOLDA",
+        "SEDHIOU"
+      ],
+      "departements": [
+        "BOUNKILING",
+        "KOLDA",
+        "MEDINA YORO FOULAH",
+        "SEDHIOU"
+      ],
+      "dr_list": [
+        {
+          "code": "103202020009",
+          "nom": "BOUSOURA SORRY I- H1 BOUSOURA SORRY II-SARE OUMAR KANDE (TALIYEL)-MARAKISSA THIERNOYEL",
+          "dept": "MEDINA YORO FOULAH",
+          "region": "KOLDA",
+          "milieu": "RURAL",
+          "nbre_men": 88.9,
+          "lon": -14.871448,
+          "lat": 12.990704
+        },
+        {
+          "code": "103202010006",
+          "nom": "MISSIRAH DIATTA BALDE-SINTHIANG MAMA-SARE DIAOBE-H2 MEDINATOUL MOUNAWARA ( CARREFOUR NDORNA)",
+          "dept": "MEDINA YORO FOULAH",
+          "region": "KOLDA",
+          "milieu": "RURAL",
+          "nbre_men": 100.0,
+          "lon": -14.985868,
+          "lat": 13.140922
+        },
+        {
+          "code": "101101000057",
+          "nom": "SIKILO NORD",
+          "dept": "KOLDA",
+          "region": "KOLDA",
+          "milieu": "URBAIN",
+          "nbre_men": 85.0,
+          "lon": -14.930883,
+          "lat": 12.901759
+        },
+        {
+          "code": "101101000001",
+          "nom": "SARE KEMO",
+          "dept": "KOLDA",
+          "region": "KOLDA",
+          "milieu": "URBAIN",
+          "nbre_men": 126.0,
+          "lon": -14.960902,
+          "lat": 12.891352
+        },
+        {
+          "code": "103201010004",
+          "nom": "SINTHIANG DIAHE- PADIARA",
+          "dept": "MEDINA YORO FOULAH",
+          "region": "KOLDA",
+          "milieu": "RURAL",
+          "nbre_men": 53.5,
+          "lon": -14.535395,
+          "lat": 13.133882
+        },
+        {
+          "code": "103203040004",
+          "nom": "BOUNDOU MEDINE",
+          "dept": "MEDINA YORO FOULAH",
+          "region": "KOLDA",
+          "milieu": "URBAIN",
+          "nbre_men": 86.9,
+          "lon": -14.953963,
+          "lat": 13.437342
+        },
+        {
+          "code": "101202060004",
+          "nom": "LINGUEYE DEMBA",
+          "dept": "KOLDA",
+          "region": "KOLDA",
+          "milieu": "URBAIN",
+          "nbre_men": 105.1,
+          "lon": -14.488083,
+          "lat": 12.874039
+        },
+        {
+          "code": "141201050008",
+          "nom": "BABINAR - SARE MENDY - TEMENTO MANJACQUE - SARE SEKOU - SARE PENDA - DATALY - SINTHIANG ALARBA",
+          "dept": "SEDHIOU",
+          "region": "SEDHIOU",
+          "milieu": "RURAL",
+          "nbre_men": 67.6,
+          "lon": -15.303663,
+          "lat": 12.914368
+        },
+        {
+          "code": "142201020022",
+          "nom": "SARE HAMA SAMBA II",
+          "dept": "BOUNKILING",
+          "region": "SEDHIOU",
+          "milieu": "RURAL",
+          "nbre_men": 47.5,
+          "lon": -15.371615,
+          "lat": 13.277283
+        },
+        {
+          "code": "101203010007",
+          "nom": "TAGNOUFA FADY-TAGNOUFA YERONDING (TABAYEL SAMBA KAMAKO)-SARE LAMINE DJIBA-VELINGARA BOUBEL-SARE DJIMBY-TAGNOUFA PATHE",
+          "dept": "KOLDA",
+          "region": "KOLDA",
+          "milieu": "RURAL",
+          "nbre_men": 69.7,
+          "lon": -15.032522,
+          "lat": 12.873348
+        }
+      ]
+    },
+    {
+      "id": "EQ32",
+      "ordre": 32,
+      "nb_dr": 10,
+      "region_dominante": "SEDHIOU",
+      "regions": [
+        "KAOLACK",
+        "SEDHIOU"
+      ],
+      "departements": [
+        "BOUNKILING",
+        "NIORO",
+        "SEDHIOU"
+      ],
+      "dr_list": [
+        {
+          "code": "62201020052",
+          "nom": "KEUR AYIB GUEYE",
+          "dept": "NIORO",
+          "region": "KAOLACK",
+          "milieu": "RURAL",
+          "nbre_men": 276.7,
+          "lon": -15.612275,
+          "lat": 13.5969
+        },
+        {
+          "code": "62202030009",
+          "nom": "DAROU MOUGNAGUENE",
+          "dept": "NIORO",
+          "region": "KAOLACK",
+          "milieu": "RURAL",
+          "nbre_men": 68.7,
+          "lon": -15.797754,
+          "lat": 13.707832
+        },
+        {
+          "code": "62202030010",
+          "nom": "POROKHANE WOLOF",
+          "dept": "NIORO",
+          "region": "KAOLACK",
+          "milieu": "RURAL",
+          "nbre_men": 102.0,
+          "lon": -15.803119,
+          "lat": 13.697496
+        },
+        {
+          "code": "142101000007",
+          "nom": "SOLLYCOUNDA",
+          "dept": "BOUNKILING",
+          "region": "SEDHIOU",
+          "milieu": "URBAIN",
+          "nbre_men": 106.1,
+          "lon": -15.685396,
+          "lat": 13.037497
+        },
+        {
+          "code": "142202030008",
+          "nom": "BARANDAMA - BASSADA - KAMPILA - SEDECK - BAYA - BISSARI KANSOYE - BISSARI NIOSSON",
+          "dept": "BOUNKILING",
+          "region": "SEDHIOU",
+          "milieu": "RURAL",
+          "nbre_men": 105.0,
+          "lon": -15.778886,
+          "lat": 12.987917
+        },
+        {
+          "code": "142203040014",
+          "nom": "SANKANLANGCOUNDA",
+          "dept": "BOUNKILING",
+          "region": "SEDHIOU",
+          "milieu": "URBAIN",
+          "nbre_men": 82.9,
+          "lon": -15.642251,
+          "lat": 13.06015
+        },
+        {
+          "code": "142201050011",
+          "nom": "NDIAMACOUTA",
+          "dept": "BOUNKILING",
+          "region": "SEDHIOU",
+          "milieu": "URBAIN",
+          "nbre_men": 81.9,
+          "lon": -15.634642,
+          "lat": 13.338595
+        },
+        {
+          "code": "141102000010",
+          "nom": "SOURWACOUNDA",
+          "dept": "SEDHIOU",
+          "region": "SEDHIOU",
+          "milieu": "URBAIN",
+          "nbre_men": 68.7,
+          "lon": -15.980074,
+          "lat": 12.831032
+        },
+        {
+          "code": "142203010005",
+          "nom": "NDIAMA",
+          "dept": "BOUNKILING",
+          "region": "SEDHIOU",
+          "milieu": "RURAL",
+          "nbre_men": 54.5,
+          "lon": -15.617312,
+          "lat": 12.939811
+        },
+        {
+          "code": "142201010012",
+          "nom": "H1- BANDIAGARA- MADINA MODY LOUM",
+          "dept": "BOUNKILING",
+          "region": "SEDHIOU",
+          "milieu": "RURAL",
+          "nbre_men": 76.7,
+          "lon": -15.527773,
+          "lat": 13.286099
+        }
+      ]
+    },
+    {
+      "id": "EQ33",
+      "ordre": 33,
+      "nb_dr": 10,
+      "region_dominante": "SEDHIOU",
+      "regions": [
+        "SEDHIOU",
+        "ZIGUINCHOR"
+      ],
+      "departements": [
+        "GOUDOMP",
+        "SEDHIOU",
+        "ZIGUINCHOR"
+      ],
+      "dr_list": [
+        {
+          "code": "143201040017",
+          "nom": "SEMENE - SINCAP TILIDJI - SONAKO - BOUTOGHOL - PIRIKI - H1 AMANSAL CENTRE -THIANNOULE",
+          "dept": "GOUDOMP",
+          "region": "SEDHIOU",
+          "milieu": "RURAL",
+          "nbre_men": 117.1,
+          "lon": -15.732896,
+          "lat": 12.450617
+        },
+        {
+          "code": "23201030018",
+          "nom": "SONE- H2 FANGHOTE",
+          "dept": "ZIGUINCHOR",
+          "region": "ZIGUINCHOR",
+          "milieu": "RURAL",
+          "nbre_men": 110.1,
+          "lon": -16.173992,
+          "lat": 12.545585
+        },
+        {
+          "code": "143203050007",
+          "nom": "BADING",
+          "dept": "GOUDOMP",
+          "region": "SEDHIOU",
+          "milieu": "URBAIN",
+          "nbre_men": 29.3,
+          "lon": -15.443363,
+          "lat": 12.63627
+        },
+        {
+          "code": "143101000010",
+          "nom": "SANSANCONO",
+          "dept": "GOUDOMP",
+          "region": "SEDHIOU",
+          "milieu": "URBAIN",
+          "nbre_men": 71.8,
+          "lon": -15.874087,
+          "lat": 12.583065
+        },
+        {
+          "code": "143201070004",
+          "nom": "SAMINE SANTO",
+          "dept": "GOUDOMP",
+          "region": "SEDHIOU",
+          "milieu": "URBAIN",
+          "nbre_men": 93.0,
+          "lon": -15.614351,
+          "lat": 12.48521
+        },
+        {
+          "code": "141203010012",
+          "nom": "BOUNO",
+          "dept": "SEDHIOU",
+          "region": "SEDHIOU",
+          "milieu": "RURAL",
+          "nbre_men": 40.4,
+          "lon": -15.576712,
+          "lat": 12.589207
+        },
+        {
+          "code": "141101000023",
+          "nom": "SANTASSOU I",
+          "dept": "SEDHIOU",
+          "region": "SEDHIOU",
+          "milieu": "URBAIN",
+          "nbre_men": 107.1,
+          "lon": -15.559995,
+          "lat": 12.706454
+        },
+        {
+          "code": "141101000011",
+          "nom": "MANSACOUNDA",
+          "dept": "SEDHIOU",
+          "region": "SEDHIOU",
+          "milieu": "URBAIN",
+          "nbre_men": 129.4,
+          "lon": -15.546776,
+          "lat": 12.710917
+        },
+        {
+          "code": "143202010021",
+          "nom": "DIARING",
+          "dept": "GOUDOMP",
+          "region": "SEDHIOU",
+          "milieu": "RURAL",
+          "nbre_men": 32.3,
+          "lon": -15.360862,
+          "lat": 12.816261
+        },
+        {
+          "code": "141201010017",
+          "nom": null,
+          "dept": "SEDHIOU",
+          "region": "SEDHIOU",
+          "milieu": "RURAL",
+          "nbre_men": 51.5,
+          "lon": -15.545064,
+          "lat": 12.824145
+        }
+      ]
+    },
+    {
+      "id": "EQ34",
+      "ordre": 34,
+      "nb_dr": 10,
+      "region_dominante": "ZIGUINCHOR",
+      "regions": [
+        "ZIGUINCHOR"
+      ],
+      "departements": [
+        "BIGNONA",
+        "ZIGUINCHOR"
+      ],
+      "dr_list": [
+        {
+          "code": "23101000217",
+          "nom": "PETIT KANDE (KANDE SIBINK)",
+          "dept": "ZIGUINCHOR",
+          "region": "ZIGUINCHOR",
+          "milieu": "URBAIN",
+          "nbre_men": 152.7,
+          "lon": -16.257906,
+          "lat": 12.57625
+        },
+        {
+          "code": "23101000177",
+          "nom": "TILENE",
+          "dept": "ZIGUINCHOR",
+          "region": "ZIGUINCHOR",
+          "milieu": "URBAIN",
+          "nbre_men": 150.6,
+          "lon": -16.260188,
+          "lat": 12.564517
+        },
+        {
+          "code": "23101000262",
+          "nom": "KANDIALANG EST",
+          "dept": "ZIGUINCHOR",
+          "region": "ZIGUINCHOR",
+          "milieu": "URBAIN",
+          "nbre_men": 98.4,
+          "lon": -16.24482,
+          "lat": 12.552781
+        },
+        {
+          "code": "21203020006",
+          "nom": "H3 KAGNAROU - H4 BALINGHORE - H5 BOUTOUMOL",
+          "dept": "BIGNONA",
+          "region": "ZIGUINCHOR",
+          "milieu": "RURAL",
+          "nbre_men": 126.2,
+          "lon": -16.234271,
+          "lat": 12.674315
+        },
+        {
+          "code": "21202010005",
+          "nom": "MANDEGANE",
+          "dept": "BIGNONA",
+          "region": "ZIGUINCHOR",
+          "milieu": "RURAL",
+          "nbre_men": 85.4,
+          "lon": -16.368403,
+          "lat": 12.742703
+        },
+        {
+          "code": "21201030010",
+          "nom": "SINDIAN",
+          "dept": "BIGNONA",
+          "region": "ZIGUINCHOR",
+          "milieu": "RURAL",
+          "nbre_men": 96.8,
+          "lon": -16.16434,
+          "lat": 12.954477
+        },
+        {
+          "code": "21204040001",
+          "nom": "SANTHIABA",
+          "dept": "BIGNONA",
+          "region": "ZIGUINCHOR",
+          "milieu": "URBAIN",
+          "nbre_men": 144.5,
+          "lon": -16.627269,
+          "lat": 13.057106
+        },
+        {
+          "code": "21204010002",
+          "nom": "KABILINE I",
+          "dept": "BIGNONA",
+          "region": "ZIGUINCHOR",
+          "milieu": "RURAL",
+          "nbre_men": 97.0,
+          "lon": -16.573313,
+          "lat": 12.940439
+        },
+        {
+          "code": "21102000005",
+          "nom": "BATINE",
+          "dept": "BIGNONA",
+          "region": "ZIGUINCHOR",
+          "milieu": "URBAIN",
+          "nbre_men": 85.9,
+          "lon": -16.54908,
+          "lat": 12.774891
+        },
+        {
+          "code": "21204030026",
+          "nom": "SELETY",
+          "dept": "BIGNONA",
+          "region": "ZIGUINCHOR",
+          "milieu": "RURAL",
+          "nbre_men": 143.4,
+          "lon": -16.580231,
+          "lat": 13.137129
+        }
+      ]
+    },
+    {
+      "id": "EQ35",
+      "ordre": 35,
+      "nb_dr": 10,
+      "region_dominante": "ZIGUINCHOR",
+      "regions": [
+        "ZIGUINCHOR"
+      ],
+      "departements": [
+        "BIGNONA",
+        "OUSSOUYE",
+        "ZIGUINCHOR"
+      ],
+      "dr_list": [
+        {
+          "code": "23201020001",
+          "nom": "H4 BOUCOTTE MANCAGNE",
+          "dept": "ZIGUINCHOR",
+          "region": "ZIGUINCHOR",
+          "milieu": "RURAL",
+          "nbre_men": 210.0,
+          "lon": -16.278119,
+          "lat": 12.52808
+        },
+        {
+          "code": "23101000040",
+          "nom": "LYNDIANE I",
+          "dept": "ZIGUINCHOR",
+          "region": "ZIGUINCHOR",
+          "milieu": "URBAIN",
+          "nbre_men": 141.4,
+          "lon": -16.300615,
+          "lat": 12.562209
+        },
+        {
+          "code": "23101000085",
+          "nom": "BOUCOTTE CENTRE",
+          "dept": "ZIGUINCHOR",
+          "region": "ZIGUINCHOR",
+          "milieu": "URBAIN",
+          "nbre_men": 141.4,
+          "lon": -16.279145,
+          "lat": 12.566742
+        },
+        {
+          "code": "23101000130",
+          "nom": "NEMA I",
+          "dept": "ZIGUINCHOR",
+          "region": "ZIGUINCHOR",
+          "milieu": "URBAIN",
+          "nbre_men": 130.1,
+          "lon": -16.271431,
+          "lat": 12.564614
+        },
+        {
+          "code": "21204020031",
+          "nom": "KAFOUNTINE",
+          "dept": "BIGNONA",
+          "region": "ZIGUINCHOR",
+          "milieu": "RURAL",
+          "nbre_men": 125.2,
+          "lon": -16.744181,
+          "lat": 12.929966
+        },
+        {
+          "code": "21204020046",
+          "nom": "ALBADAR-H1 TRANQUILLE",
+          "dept": "BIGNONA",
+          "region": "ZIGUINCHOR",
+          "milieu": "RURAL",
+          "nbre_men": 68.7,
+          "lon": -16.686947,
+          "lat": 13.000443
+        },
+        {
+          "code": "22202010004",
+          "nom": "H1 ANTAYE - SAM SAM - SANTHIABA OUOLOF - EFFISSAO - SAMATTITE",
+          "dept": "OUSSOUYE",
+          "region": "ZIGUINCHOR",
+          "milieu": "RURAL",
+          "nbre_men": 113.1,
+          "lon": -16.65291,
+          "lat": 12.545422
+        },
+        {
+          "code": "22201010028",
+          "nom": "BOUCOTTE OUOLOF",
+          "dept": "OUSSOUYE",
+          "region": "ZIGUINCHOR",
+          "milieu": "RURAL",
+          "nbre_men": 181.7,
+          "lon": -16.741544,
+          "lat": 12.426336
+        },
+        {
+          "code": "22101000001",
+          "nom": "BUWENTENE",
+          "dept": "OUSSOUYE",
+          "region": "ZIGUINCHOR",
+          "milieu": "URBAIN",
+          "nbre_men": 142.5,
+          "lon": -16.55679,
+          "lat": 12.493148
+        },
+        {
+          "code": "22201020003",
+          "nom": "YOUTOU DJIBONKER - YOUTOU KAGAR - YOUTOU ESSOUKAYE",
+          "dept": "OUSSOUYE",
+          "region": "ZIGUINCHOR",
+          "milieu": "RURAL",
+          "nbre_men": 140.1,
+          "lon": -16.468603,
+          "lat": 12.402675
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+env/
+__pycache__/
+*.pyc
+photos_cache/
+web/node_modules/
+web/dist/
+web/.env.local
+web/.env
+.DS_Store
+.vscode/
+.idea/
