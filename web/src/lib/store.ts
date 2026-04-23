@@ -1,10 +1,11 @@
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { supabase } from './supabase'
 import type { Assignment, Role } from '../types'
 
 const LS_KEY = 'ehcvm3_assignments_v1'
 
-type AssignmentMap = Record<string, Assignment> // keyed by agent_id
+type AssignmentMap = Record<string, Assignment>
+export type SyncState = 'idle' | 'syncing' | 'error' | 'offline'
 
 function loadFromLS(): AssignmentMap {
   try {
@@ -19,21 +20,46 @@ function saveToLS(m: AssignmentMap) {
   localStorage.setItem(LS_KEY, JSON.stringify(m))
 }
 
-export function useAssignments() {
+interface Options {
+  onError?: (msg: string) => void
+}
+
+export function useAssignments(opts: Options = {}) {
   const [assignments, setAssignments] = useState<AssignmentMap>(loadFromLS)
   const [ready, setReady] = useState(false)
+  const [sync, setSync] = useState<SyncState>(supabase ? 'idle' : 'offline')
+  const pendingCountRef = useRef(0)
+  const onErrorRef = useRef(opts.onError)
+  useEffect(() => {
+    onErrorRef.current = opts.onError
+  }, [opts.onError])
 
-  // Initial load + realtime subscription (Supabase if configured, else localStorage)
+  const markStart = () => {
+    pendingCountRef.current += 1
+    setSync('syncing')
+  }
+  const markDone = (err?: string) => {
+    pendingCountRef.current = Math.max(0, pendingCountRef.current - 1)
+    if (err) {
+      setSync('error')
+      onErrorRef.current?.(err)
+    } else if (pendingCountRef.current === 0) {
+      setSync('idle')
+    }
+  }
+
   useEffect(() => {
     if (!supabase) {
       setReady(true)
       return
     }
     let active = true
-    supabase.from('assignments').select('*').then(({ data, error }) => {
+    const sb = supabase
+    sb.from('assignments').select('*').then(({ data, error }) => {
       if (!active) return
       if (error) {
-        console.warn('[assignments] load error', error)
+        onErrorRef.current?.(`Chargement impossible : ${error.message}`)
+        setSync('error')
       } else if (data) {
         const map: AssignmentMap = {}
         for (const a of data as Assignment[]) map[a.agent_id] = a
@@ -43,7 +69,7 @@ export function useAssignments() {
       setReady(true)
     })
 
-    const channel = supabase
+    const channel = sb
       .channel('assignments-changes')
       .on('postgres_changes', { event: '*', schema: 'public', table: 'assignments' }, (payload) => {
         setAssignments((prev) => {
@@ -61,59 +87,91 @@ export function useAssignments() {
       })
       .subscribe()
 
-    const sb = supabase
     return () => {
       active = false
       sb.removeChannel(channel)
     }
   }, [])
 
-  const place = async (agent_id: string, equipe_id: string, role: Role, slot: number) => {
-    const next: Assignment = {
-      agent_id,
-      equipe_id,
-      role,
-      slot,
-      updated_at: new Date().toISOString(),
-    }
-    setAssignments((prev) => {
-      const copy = { ...prev }
-      // Clear any other assignment in the same slot of target team
-      for (const [aid, a] of Object.entries(copy)) {
-        if (a.equipe_id === equipe_id && a.slot === slot) {
-          delete copy[aid]
-        }
+  const place = useCallback(
+    async (agent_id: string, equipe_id: string, role: Role, slot: number) => {
+      const next: Assignment = {
+        agent_id,
+        equipe_id,
+        role,
+        slot,
+        updated_at: new Date().toISOString(),
       }
-      copy[agent_id] = next
-      saveToLS(copy)
-      return copy
-    })
-    if (supabase) {
-      const sb = supabase
-      const { error } = await sb.from('assignments').upsert(next, { onConflict: 'agent_id' })
-      if (error) console.warn('[assignments] upsert error', error)
-    }
-  }
+      // Optimistic local update — find who was in target slot, move them aside
+      let displacedId: string | null = null
+      setAssignments((prev) => {
+        const copy = { ...prev }
+        for (const [aid, a] of Object.entries(copy)) {
+          if (a.equipe_id === equipe_id && a.slot === slot && aid !== agent_id) {
+            displacedId = aid
+            delete copy[aid]
+          }
+        }
+        copy[agent_id] = next
+        saveToLS(copy)
+        return copy
+      })
 
-  const remove = async (agent_id: string) => {
+      if (!supabase) return
+      const sb = supabase
+      markStart()
+      try {
+        // Remove any row occupying (equipe_id, slot) to avoid unique conflict
+        if (displacedId) {
+          const { error: dErr } = await sb.from('assignments').delete().eq('agent_id', displacedId)
+          if (dErr) throw new Error(dErr.message)
+        }
+        const { error } = await sb.from('assignments').upsert(next, { onConflict: 'agent_id' })
+        if (error) throw new Error(error.message)
+        markDone()
+      } catch (e) {
+        const msg = e instanceof Error ? e.message : String(e)
+        markDone(`Écriture refusée : ${msg}. Les autres superviseurs ne verront pas ce changement.`)
+      }
+    },
+    []
+  )
+
+  const remove = useCallback(async (agent_id: string) => {
     setAssignments((prev) => {
       const copy = { ...prev }
       delete copy[agent_id]
       saveToLS(copy)
       return copy
     })
-    if (supabase) {
-      await supabase.from('assignments').delete().eq('agent_id', agent_id)
+    if (!supabase) return
+    const sb = supabase
+    markStart()
+    try {
+      const { error } = await sb.from('assignments').delete().eq('agent_id', agent_id)
+      if (error) throw new Error(error.message)
+      markDone()
+    } catch (e) {
+      const msg = e instanceof Error ? e.message : String(e)
+      markDone(`Suppression refusée : ${msg}`)
     }
-  }
+  }, [])
 
-  const clearAll = async () => {
+  const clearAll = useCallback(async () => {
     setAssignments({})
     saveToLS({})
-    if (supabase) {
-      await supabase.from('assignments').delete().neq('agent_id', '')
+    if (!supabase) return
+    const sb = supabase
+    markStart()
+    try {
+      const { error } = await sb.from('assignments').delete().neq('agent_id', '')
+      if (error) throw new Error(error.message)
+      markDone()
+    } catch (e) {
+      const msg = e instanceof Error ? e.message : String(e)
+      markDone(`Réinitialisation refusée : ${msg}`)
     }
-  }
+  }, [])
 
-  return { assignments, place, remove, clearAll, ready }
+  return { assignments, place, remove, clearAll, ready, sync }
 }

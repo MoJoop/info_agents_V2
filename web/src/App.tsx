@@ -8,7 +8,8 @@ import {
   type DragEndEvent,
   type DragStartEvent,
 } from '@dnd-kit/core'
-import { Download, Map as MapIcon, Trash2, Users, Wifi, WifiOff } from 'lucide-react'
+import { AlertTriangle, Download, Loader2, Map as MapIcon, Trash2, Users, Wifi, WifiOff } from 'lucide-react'
+import type { SyncState } from './lib/store'
 import clsx from 'clsx'
 import type { Agent, AgentsPayload, Equipe, EquipesPayload, MissingStrategy, Weights } from './types'
 import { AgentPool } from './components/AgentPool'
@@ -17,10 +18,63 @@ import { AgentModal } from './components/AgentModal'
 import { WeightingPanel } from './components/WeightingPanel'
 import { AgentCard } from './components/AgentCard'
 import { MapView } from './components/MapView'
+import { useToast } from './components/Toast'
 import { computeGroupMeans, computeScore, DEFAULT_WEIGHTS } from './lib/scoring'
 import { useAssignments } from './lib/store'
 import { isSupabaseConfigured } from './lib/supabase'
 import { exportTeamsToExcel } from './lib/export'
+
+function SyncBadge({
+  configured,
+  ready,
+  sync,
+}: {
+  configured: boolean
+  ready: boolean
+  sync: SyncState
+}) {
+  if (!configured) {
+    return (
+      <div className="flex items-center gap-1.5 text-xs px-2 py-1 rounded-full bg-slate-100 text-slate-600">
+        <WifiOff className="h-3 w-3" />
+        Local
+      </div>
+    )
+  }
+  if (!ready) {
+    return (
+      <div className="flex items-center gap-1.5 text-xs px-2 py-1 rounded-full bg-slate-100 text-slate-600">
+        <Loader2 className="h-3 w-3 animate-spin" />
+        Connexion…
+      </div>
+    )
+  }
+  if (sync === 'syncing') {
+    return (
+      <div className="flex items-center gap-1.5 text-xs px-2 py-1 rounded-full bg-amber-50 text-amber-700">
+        <Loader2 className="h-3 w-3 animate-spin" />
+        Synchro…
+      </div>
+    )
+  }
+  if (sync === 'error') {
+    return (
+      <div
+        className="flex items-center gap-1.5 text-xs px-2 py-1 rounded-full bg-red-50 text-red-700"
+        title="La dernière écriture a échoué. Les autres superviseurs ne voient pas cette modification."
+      >
+        <AlertTriangle className="h-3 w-3" />
+        Erreur sync
+      </div>
+    )
+  }
+  return (
+    <div className="flex items-center gap-1.5 text-xs px-2 py-1 rounded-full bg-emerald-50 text-emerald-700">
+      <Wifi className="h-3 w-3" />
+      Temps réel
+    </div>
+  )
+}
 
 export default function App() {
   const [agents, setAgents] = useState<Agent[]>([])
@@ -31,7 +85,10 @@ export default function App() {
   const [openAgent, setOpenAgent] = useState<Agent | null>(null)
   const [activeDrag, setActiveDrag] = useState<Agent | null>(null)
   const [tab, setTab] = useState<'composition' | 'carte'>('composition')
-  const { assignments, place, remove, clearAll, ready } = useAssignments()
+  const toast = useToast()
+  const { assignments, place, remove, clearAll, ready, sync } = useAssignments({
+    onError: (msg) => toast.push('error', msg),
+  })
 
   useEffect(() => {
     Promise.all([
@@ -127,13 +184,7 @@ export default function App() {
                 <span className="text-amber-700"><b>{stats.ceMissing}</b> CE manquants</span>
               )}
             </div>
-            <div className={
-              'flex items-center gap-1.5 text-xs px-2 py-1 rounded-full ' +
-              (isSupabaseConfigured ? 'bg-emerald-50 text-emerald-700' : 'bg-slate-100 text-slate-600')
-            }>
-              {isSupabaseConfigured ? <Wifi className="h-3 w-3" /> : <WifiOff className="h-3 w-3" />}
-              {isSupabaseConfigured ? (ready ? 'Temps réel' : 'Connexion…') : 'Local'}
-            </div>
+            <SyncBadge configured={isSupabaseConfigured} ready={ready} sync={sync} />
             <button
               onClick={() => exportTeamsToExcel(agents, equipes, assignments)}
               className="inline-flex items-center gap-1.5 text-xs font-medium rounded-lg bg-slate-800 text-white px-3 py-1.5 hover:bg-slate-700"
