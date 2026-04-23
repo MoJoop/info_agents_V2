@@ -118,11 +118,15 @@ export function MapView() {
   useEffect(() => {
     if (!payload || !containerRef.current || mapRef.current) return
 
+    const container = containerRef.current
+    // Debug: log actual dimensions the map will be given
+    // eslint-disable-next-line no-console
+    console.log('[MapView] init container size', container.clientWidth, 'x', container.clientHeight)
+
     const map = new maplibregl.Map({
-      container: containerRef.current,
+      container,
       style: {
         version: 8,
-        glyphs: 'https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf',
         sources: {
           basemap: {
             type: 'raster',
@@ -137,7 +141,10 @@ export function MapView() {
               '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · © <a href="https://carto.com/attributions">CARTO</a>',
           },
         },
-        layers: [{ id: 'basemap', type: 'raster', source: 'basemap' }],
+        layers: [
+          { id: 'bg', type: 'background', paint: { 'background-color': '#eef1f5' } },
+          { id: 'basemap', type: 'raster', source: 'basemap' },
+        ],
       },
       center: [-15.0, 14.5],
       zoom: 6.2,
@@ -145,10 +152,22 @@ export function MapView() {
     mapRef.current = map
     map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'bottom-right')
 
-    // Force resize once the container has its real dimensions
-    const resizeTimer = window.setTimeout(() => map.resize(), 100)
+    // Force resize once the container has its real dimensions (Chromium sometimes
+    // reports 0 on first mount inside a tabbed pane). We call resize repeatedly.
+    const resizeTimers = [0, 100, 400].map((ms) =>
+      window.setTimeout(() => {
+        map.resize()
+        // eslint-disable-next-line no-console
+        console.log('[MapView] resize at', ms, 'ms ->', container.clientWidth, 'x', container.clientHeight)
+      }, ms)
+    )
     const resizeObserver = new ResizeObserver(() => map.resize())
-    resizeObserver.observe(containerRef.current)
+    resizeObserver.observe(container)
+
+    map.on('load', () => {
+      // eslint-disable-next-line no-console
+      console.log('[MapView] map loaded')
+    })
     map.on('error', (e) => {
       // eslint-disable-next-line no-console
       console.warn('[MapView] tile/style error', e?.error?.message || e)
@@ -268,7 +287,7 @@ export function MapView() {
     })
 
     return () => {
-      window.clearTimeout(resizeTimer)
+      resizeTimers.forEach((id) => window.clearTimeout(id))
       resizeObserver.disconnect()
       map.remove()
       mapRef.current = null
@@ -416,8 +435,12 @@ export function MapView() {
     )
 
   return (
-    <div className="absolute inset-0">
-      <div ref={containerRef} className="absolute inset-0" />
+    <div className="relative w-full h-full">
+      <div
+        ref={containerRef}
+        className="absolute inset-0 bg-slate-100"
+        style={{ minHeight: 300 }}
+      />
 
       {/* Toolbar top-left */}
       <div className="absolute top-3 left-3 z-10 rounded-xl bg-white/90 backdrop-blur shadow-sm border border-slate-200 p-1.5 flex items-center gap-1">
