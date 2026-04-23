@@ -435,11 +435,10 @@ export function MapView() {
     )
 
   return (
-    <div className="relative w-full h-full">
+    <div className="relative" style={{ width: '100%', height: '100%' }}>
       <div
         ref={containerRef}
         className="absolute inset-0 bg-slate-100"
-        style={{ minHeight: 300 }}
       />
 
       {/* Toolbar top-left */}
