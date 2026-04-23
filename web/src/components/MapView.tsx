@@ -122,21 +122,37 @@ export function MapView() {
       container: containerRef.current,
       style: {
         version: 8,
+        glyphs: 'https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf',
         sources: {
-          osm: {
+          basemap: {
             type: 'raster',
-            tiles: ['https://tile.openstreetmap.org/{z}/{x}/{y}.png'],
+            tiles: [
+              'https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
+              'https://b.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
+              'https://c.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
+              'https://d.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
+            ],
             tileSize: 256,
-            attribution: '© OpenStreetMap contributors',
+            attribution:
+              '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · © <a href="https://carto.com/attributions">CARTO</a>',
           },
         },
-        layers: [{ id: 'osm', type: 'raster', source: 'osm' }],
+        layers: [{ id: 'basemap', type: 'raster', source: 'basemap' }],
       },
       center: [-15.0, 14.5],
       zoom: 6.2,
     })
     mapRef.current = map
     map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'bottom-right')
+
+    // Force resize once the container has its real dimensions
+    const resizeTimer = window.setTimeout(() => map.resize(), 100)
+    const resizeObserver = new ResizeObserver(() => map.resize())
+    resizeObserver.observe(containerRef.current)
+    map.on('error', (e) => {
+      // eslint-disable-next-line no-console
+      console.warn('[MapView] tile/style error', e?.error?.message || e)
+    })
 
     map.on('load', () => {
       if (payload.metadata.bbox) {
@@ -252,6 +268,8 @@ export function MapView() {
     })
 
     return () => {
+      window.clearTimeout(resizeTimer)
+      resizeObserver.disconnect()
       map.remove()
       mapRef.current = null
     }
