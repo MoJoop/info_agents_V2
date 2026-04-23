@@ -2,7 +2,7 @@
   "metadata": {
     "date_export": "2026-04-23",
     "source": "note_final_v2_ehcvm3.xlsx",
-    "total_agents": 168,
+    "total_agents": 183,
     "regions_choix": [
       "DAKAR",
       "DIOURBEL",
@@ -9524,6 +9524,736 @@
       "moyenne_scenario_1": 6.48,
       "moyenne_scenario_2": 6.34,
       "moyenne_exam": 6.7
+    },
+    {
+      "id": "782572441",
+      "telephone": "782572441",
+      "prenom": "SALIOU",
+      "nom": "NDOUR",
+      "nom_complet": "SALIOU NDOUR",
+      "sexe": null,
+      "date_naissance": null,
+      "adresse": null,
+      "photo_kobo_url": null,
+      "photo_url": null,
+      "choix1": null,
+      "choix2": null,
+      "choix3": null,
+      "langues": null,
+      "notes": {
+        "j1": {
+          "S1": 14.0,
+          "S2": 14.0,
+          "S3": 14.0,
+          "S4": 13.0,
+          "S9": 14.0,
+          "S11": 18.0,
+          "moyenne": 14.5
+        },
+        "j2": {
+          "S7": 14.75,
+          "S10": 13.33,
+          "S13": 11.0,
+          "S16": 16.0,
+          "S17": 15.2,
+          "moyenne": 14.06,
+          "bonus": 0.25,
+          "malus": -0.25
+        },
+        "dev": {
+          "S01": 13.57,
+          "S02": 12.5,
+          "S03": 16.67,
+          "S04": 14.0,
+          "S05_S06": 13.0,
+          "S07": 16.6,
+          "S09": 7.1,
+          "S10": 16.5,
+          "moyenne": 14.1
+        }
+      },
+      "moyennes_categorie": {
+        "j1": 14.5,
+        "j2": 14.06,
+        "dev": 14.1
+      },
+      "moyenne_globale_simple": 14.22,
+      "moyenne_scenario_1": 14.23,
+      "moyenne_scenario_2": 14.21,
+      "moyenne_exam": 14.28
+    },
+    {
+      "id": "771187149",
+      "telephone": "771187149",
+      "prenom": "KHADY JA",
+      "nom": "BA",
+      "nom_complet": "KHADY JA BA",
+      "sexe": null,
+      "date_naissance": null,
+      "adresse": null,
+      "photo_kobo_url": null,
+      "photo_url": null,
+      "choix1": null,
+      "choix2": null,
+      "choix3": null,
+      "langues": null,
+      "notes": {
+        "j1": {
+          "S1": 12.0,
+          "S2": 15.0,
+          "S3": 17.0,
+          "S4": 15.0,
+          "S9": 17.0,
+          "S11": 13.0,
+          "moyenne": 14.83
+        },
+        "j2": {
+          "S7": 9.0,
+          "S10": 13.33,
+          "S13": 17.5,
+          "S16": 15.5,
+          "S17": 12.0,
+          "moyenne": 13.47,
+          "bonus": 0.75,
+          "malus": -0.25
+        },
+        "dev": {
+          "S01": 14.29,
+          "S02": 13.5,
+          "S03": 17.5,
+          "S04": 13.0,
+          "S05_S06": 16.0,
+          "S07": 15.0,
+          "S09": 14.3,
+          "S10": 6.0,
+          "moyenne": 13.4
+        }
+      },
+      "moyennes_categorie": {
+        "j1": 14.83,
+        "j2": 13.47,
+        "dev": 13.4
+      },
+      "moyenne_globale_simple": 13.9,
+      "moyenne_scenario_1": 13.96,
+      "moyenne_scenario_2": 13.85,
+      "moyenne_exam": 14.15
+    },
+    {
+      "id": "773715128",
+      "telephone": "773715128",
+      "prenom": "FATOU",
+      "nom": "KOR",
+      "nom_complet": "FATOU KOR",
+      "sexe": null,
+      "date_naissance": null,
+      "adresse": null,
+      "photo_kobo_url": null,
+      "photo_url": null,
+      "choix1": null,
+      "choix2": null,
+      "choix3": null,
+      "langues": null,
+      "notes": {
+        "j1": {
+          "S1": 14.0,
+          "S2": 9.0,
+          "S3": 17.0,
+          "S4": 13.0,
+          "S9": 16.0,
+          "S11": 10.0,
+          "moyenne": 13.17
+        },
+        "j2": {
+          "S7": 14.0,
+          "S10": 8.89,
+          "S13": 11.0,
+          "S16": 17.5,
+          "S17": 17.2,
+          "moyenne": 13.72,
+          "bonus": 0.75,
+          "malus": -0.25
+        },
+        "dev": {
+          "S01": 15.71,
+          "S02": null,
+          "S03": null,
+          "S04": 13.0,
+          "S05_S06": 12.5,
+          "S07": 17.3,
+          "S09": 14.3,
+          "S10": 15.0,
+          "moyenne": 14.4
+        }
+      },
+      "moyennes_categorie": {
+        "j1": 13.17,
+        "j2": 13.72,
+        "dev": 14.4
+      },
+      "moyenne_globale_simple": 13.76,
+      "moyenne_scenario_1": 13.68,
+      "moyenne_scenario_2": 13.83,
+      "moyenne_exam": 13.44
+    },
+    {
+      "id": "778684033",
+      "telephone": "778684033",
+      "prenom": "FATOU DIOP NUMERO",
+      "nom": "1",
+      "nom_complet": "FATOU DIOP NUMERO 1",
+      "sexe": null,
+      "date_naissance": null,
+      "adresse": null,
+      "photo_kobo_url": null,
+      "photo_url": null,
+      "choix1": null,
+      "choix2": null,
+      "choix3": null,
+      "langues": null,
+      "notes": {
+        "j1": {
+          "S1": 16.0,
+          "S2": 11.0,
+          "S3": 16.0,
+          "S4": 16.0,
+          "S9": 13.0,
+          "S11": 10.0,
+          "moyenne": 13.67
+        },
+        "j2": {
+          "S7": 11.75,
+          "S10": 11.11,
+          "S13": 13.0,
+          "S16": 11.0,
+          "S17": 18.0,
+          "moyenne": 12.97,
+          "bonus": 0.75,
+          "malus": -0.25
+        },
+        "dev": {
+          "S01": 12.14,
+          "S02": 13.5,
+          "S03": 18.33,
+          "S04": 12.0,
+          "S05_S06": 11.0,
+          "S07": 16.3,
+          "S09": 11.4,
+          "S10": 19.0,
+          "moyenne": 14.3
+        }
+      },
+      "moyennes_categorie": {
+        "j1": 13.67,
+        "j2": 12.97,
+        "dev": 14.3
+      },
+      "moyenne_globale_simple": 13.65,
+      "moyenne_scenario_1": 13.56,
+      "moyenne_scenario_2": 13.71,
+      "moyenne_exam": 13.32
+    },
+    {
+      "id": "786301295",
+      "telephone": "786301295",
+      "prenom": "YABA",
+      "nom": "WADE",
+      "nom_complet": "YABA WADE",
+      "sexe": null,
+      "date_naissance": null,
+      "adresse": null,
+      "photo_kobo_url": null,
+      "photo_url": null,
+      "choix1": null,
+      "choix2": null,
+      "choix3": null,
+      "langues": null,
+      "notes": {
+        "j1": {
+          "S1": 16.0,
+          "S2": 10.0,
+          "S3": 13.0,
+          "S4": 12.0,
+          "S9": 14.0,
+          "S11": 12.0,
+          "moyenne": 12.83
+        },
+        "j2": {
+          "S7": 13.75,
+          "S10": 13.33,
+          "S13": 7.5,
+          "S16": 15.5,
+          "S17": 17.6,
+          "moyenne": 13.54,
+          "bonus": 1.0,
+          "malus": -0.25
+        },
+        "dev": {
+          "S01": 11.43,
+          "S02": 11.5,
+          "S03": 17.5,
+          "S04": 14.0,
+          "S05_S06": 11.0,
+          "S07": 16.1,
+          "S09": 11.4,
+          "S10": 14.0,
+          "moyenne": 13.7
+        }
+      },
+      "moyennes_categorie": {
+        "j1": 12.83,
+        "j2": 13.54,
+        "dev": 13.7
+      },
+      "moyenne_globale_simple": 13.36,
+      "moyenne_scenario_1": 13.31,
+      "moyenne_scenario_2": 13.39,
+      "moyenne_exam": 13.19
+    },
+    {
+      "id": "773449765",
+      "telephone": "773449765",
+      "prenom": "MOUMY",
+      "nom": "NDIAYE",
+      "nom_complet": "MOUMY NDIAYE",
+      "sexe": null,
+      "date_naissance": null,
+      "adresse": null,
+      "photo_kobo_url": null,
+      "photo_url": null,
+      "choix1": null,
+      "choix2": null,
+      "choix3": null,
+      "langues": null,
+      "notes": {
+        "j1": {
+          "S1": 12.0,
+          "S2": 15.0,
+          "S3": 14.0,
+          "S4": 9.0,
+          "S9": 17.0,
+          "S11": 12.0,
+          "moyenne": 13.17
+        },
+        "j2": {
+          "S7": 2.0,
+          "S10": 6.67,
+          "S13": 16.0,
+          "S16": 11.5,
+          "S17": 0.0,
+          "moyenne": 7.23,
+          "bonus": 0.25,
+          "malus": -0.25
+        },
+        "dev": {
+          "S01": 10.71,
+          "S02": 9.5,
+          "S03": 13.33,
+          "S04": null,
+          "S05_S06": null,
+          "S07": 13.7,
+          "S09": 12.9,
+          "S10": 10.5,
+          "moyenne": 11.9
+        }
+      },
+      "moyennes_categorie": {
+        "j1": 13.17,
+        "j2": 7.23,
+        "dev": 11.9
+      },
+      "moyenne_globale_simple": 10.77,
+      "moyenne_scenario_1": 10.62,
+      "moyenne_scenario_2": 10.88,
+      "moyenne_exam": 10.2
+    },
+    {
+      "id": "781632246",
+      "telephone": "781632246",
+      "prenom": "FATOU",
+      "nom": "DIOP",
+      "nom_complet": "FATOU DIOP",
+      "sexe": null,
+      "date_naissance": null,
+      "adresse": null,
+      "photo_kobo_url": null,
+      "photo_url": null,
+      "choix1": null,
+      "choix2": null,
+      "choix3": null,
+      "langues": null,
+      "notes": {
+        "j1": {
+          "S1": 12.0,
+          "S2": 10.0,
+          "S3": 13.0,
+          "S4": 12.0,
+          "S9": 16.0,
+          "S11": 9.0,
+          "moyenne": 12.0
+        },
+        "j2": {
+          "S7": 11.25,
+          "S10": 0.0,
+          "S13": 8.0,
+          "S16": 6.5,
+          "S17": 15.2,
+          "moyenne": 8.19,
+          "bonus": null,
+          "malus": null
+        },
+        "dev": {
+          "S01": 12.1,
+          "S02": 11.0,
+          "S03": 4.17,
+          "S04": 7.0,
+          "S05_S06": 9.0,
+          "S07": 8.1,
+          "S09": 1.4,
+          "S10": 0.0,
+          "moyenne": 7.2
+        }
+      },
+      "moyennes_categorie": {
+        "j1": 12.0,
+        "j2": 8.19,
+        "dev": 7.2
+      },
+      "moyenne_globale_simple": 9.13,
+      "moyenne_scenario_1": 9.37,
+      "moyenne_scenario_2": 8.94,
+      "moyenne_exam": 10.1
+    },
+    {
+      "id": "779220952",
+      "telephone": "779220952",
+      "prenom": "AISSATOU",
+      "nom": "NDIAYE",
+      "nom_complet": "AISSATOU NDIAYE",
+      "sexe": null,
+      "date_naissance": null,
+      "adresse": null,
+      "photo_kobo_url": null,
+      "photo_url": null,
+      "choix1": null,
+      "choix2": null,
+      "choix3": null,
+      "langues": null,
+      "notes": {
+        "j1": {
+          "S1": 8.0,
+          "S2": 13.0,
+          "S3": 16.0,
+          "S4": 7.0,
+          "S9": 9.0,
+          "S11": 7.0,
+          "moyenne": 10.0
+        },
+        "j2": {
+          "S7": 11.75,
+          "S10": 6.67,
+          "S13": 11.0,
+          "S16": 9.0,
+          "S17": 3.6,
+          "moyenne": 8.4,
+          "bonus": 0.75,
+          "malus": -0.25
+        },
+        "dev": {
+          "S01": 12.86,
+          "S02": 8.0,
+          "S03": 15.0,
+          "S04": 5.0,
+          "S05_S06": 8.5,
+          "S07": 5.5,
+          "S09": 11.4,
+          "S10": 2.5,
+          "moyenne": 9.1
+        }
+      },
+      "moyennes_categorie": {
+        "j1": 10.0,
+        "j2": 8.4,
+        "dev": 9.1
+      },
+      "moyenne_globale_simple": 9.17,
+      "moyenne_scenario_1": 9.18,
+      "moyenne_scenario_2": 9.16,
+      "moyenne_exam": 9.2
+    },
+    {
+      "id": "763973113",
+      "telephone": "763973113",
+      "prenom": "MARIAMA",
+      "nom": "DIOP",
+      "nom_complet": "MARIAMA DIOP",
+      "sexe": null,
+      "date_naissance": null,
+      "adresse": null,
+      "photo_kobo_url": null,
+      "photo_url": null,
+      "choix1": null,
+      "choix2": null,
+      "choix3": null,
+      "langues": null,
+      "notes": {
+        "j1": null,
+        "j2": null,
+        "dev": {
+          "S01": 15.0,
+          "S02": 14.0,
+          "S03": 18.33,
+          "S04": 14.0,
+          "S05_S06": 18.0,
+          "S07": null,
+          "S09": null,
+          "S10": null,
+          "moyenne": 16.1
+        }
+      },
+      "moyennes_categorie": {
+        "j1": null,
+        "j2": null,
+        "dev": 16.1
+      },
+      "moyenne_globale_simple": 16.1,
+      "moyenne_scenario_1": 4.03,
+      "moyenne_scenario_2": 6.44,
+      "moyenne_exam": null
+    },
+    {
+      "id": "775078068",
+      "telephone": "775078068",
+      "prenom": "PAPA BOUBACAR",
+      "nom": "SONKO",
+      "nom_complet": "PAPA BOUBACAR SONKO",
+      "sexe": null,
+      "date_naissance": null,
+      "adresse": null,
+      "photo_kobo_url": null,
+      "photo_url": null,
+      "choix1": null,
+      "choix2": null,
+      "choix3": null,
+      "langues": null,
+      "notes": {
+        "j1": null,
+        "j2": null,
+        "dev": {
+          "S01": null,
+          "S02": null,
+          "S03": null,
+          "S04": 7.0,
+          "S05_S06": 11.0,
+          "S07": null,
+          "S09": null,
+          "S10": null,
+          "moyenne": 9.0
+        }
+      },
+      "moyennes_categorie": {
+        "j1": null,
+        "j2": null,
+        "dev": 9.0
+      },
+      "moyenne_globale_simple": 9.0,
+      "moyenne_scenario_1": 2.25,
+      "moyenne_scenario_2": 3.6,
+      "moyenne_exam": null
+    },
+    {
+      "id": "777371166",
+      "telephone": "777371166",
+      "prenom": "ARMEL",
+      "nom": "SAGNA",
+      "nom_complet": "ARMEL SAGNA",
+      "sexe": null,
+      "date_naissance": null,
+      "adresse": null,
+      "photo_kobo_url": null,
+      "photo_url": null,
+      "choix1": null,
+      "choix2": null,
+      "choix3": null,
+      "langues": null,
+      "notes": {
+        "j1": null,
+        "j2": null,
+        "dev": {
+          "S01": null,
+          "S02": null,
+          "S03": null,
+          "S04": 7.0,
+          "S05_S06": 10.5,
+          "S07": null,
+          "S09": null,
+          "S10": null,
+          "moyenne": 8.8
+        }
+      },
+      "moyennes_categorie": {
+        "j1": null,
+        "j2": null,
+        "dev": 8.8
+      },
+      "moyenne_globale_simple": 8.8,
+      "moyenne_scenario_1": 2.2,
+      "moyenne_scenario_2": 3.52,
+      "moyenne_exam": null
+    },
+    {
+      "id": "708877225",
+      "telephone": "708877225",
+      "prenom": "MOUSSA",
+      "nom": "DIOP",
+      "nom_complet": "MOUSSA DIOP",
+      "sexe": null,
+      "date_naissance": null,
+      "adresse": null,
+      "photo_kobo_url": null,
+      "photo_url": null,
+      "choix1": null,
+      "choix2": null,
+      "choix3": null,
+      "langues": null,
+      "notes": {
+        "j1": {
+          "S1": 12.0,
+          "S2": 14.0,
+          "S3": 18.0,
+          "S4": 20.0,
+          "S9": 11.0,
+          "S11": 13.0,
+          "moyenne": 14.67
+        },
+        "j2": null,
+        "dev": null
+      },
+      "moyennes_categorie": {
+        "j1": 14.67,
+        "j2": null,
+        "dev": null
+      },
+      "moyenne_globale_simple": 14.67,
+      "moyenne_scenario_1": null,
+      "moyenne_scenario_2": null,
+      "moyenne_exam": null
+    },
+    {
+      "id": "774910552",
+      "telephone": "774910552",
+      "prenom": "OMAR",
+      "nom": "FALL",
+      "nom_complet": "OMAR FALL",
+      "sexe": null,
+      "date_naissance": null,
+      "adresse": null,
+      "photo_kobo_url": null,
+      "photo_url": null,
+      "choix1": null,
+      "choix2": null,
+      "choix3": null,
+      "langues": null,
+      "notes": {
+        "j1": null,
+        "j2": null,
+        "dev": {
+          "S01": 11.43,
+          "S02": 9.5,
+          "S03": 11.67,
+          "S04": 11.0,
+          "S05_S06": 14.0,
+          "S07": null,
+          "S09": null,
+          "S10": null,
+          "moyenne": 12.3
+        }
+      },
+      "moyennes_categorie": {
+        "j1": null,
+        "j2": null,
+        "dev": 12.3
+      },
+      "moyenne_globale_simple": 12.3,
+      "moyenne_scenario_1": null,
+      "moyenne_scenario_2": null,
+      "moyenne_exam": null
+    },
+    {
+      "id": "775949810",
+      "telephone": "775949810",
+      "prenom": "MICHEL",
+      "nom": "SECK",
+      "nom_complet": "MICHEL SECK",
+      "sexe": null,
+      "date_naissance": null,
+      "adresse": null,
+      "photo_kobo_url": null,
+      "photo_url": null,
+      "choix1": null,
+      "choix2": null,
+      "choix3": null,
+      "langues": null,
+      "notes": {
+        "j1": {
+          "S1": 20.0,
+          "S2": 15.0,
+          "S3": 18.0,
+          "S4": 11.0,
+          "S9": 11.0,
+          "S11": 9.0,
+          "moyenne": 14.0
+        },
+        "j2": null,
+        "dev": null
+      },
+      "moyennes_categorie": {
+        "j1": 14.0,
+        "j2": null,
+        "dev": null
+      },
+      "moyenne_globale_simple": 14.0,
+      "moyenne_scenario_1": null,
+      "moyenne_scenario_2": null,
+      "moyenne_exam": null
+    },
+    {
+      "id": "782021142",
+      "telephone": "782021142",
+      "prenom": "SALY",
+      "nom": "SAMBOU",
+      "nom_complet": "SALY SAMBOU",
+      "sexe": null,
+      "date_naissance": null,
+      "adresse": null,
+      "photo_kobo_url": null,
+      "photo_url": null,
+      "choix1": null,
+      "choix2": null,
+      "choix3": null,
+      "langues": null,
+      "notes": {
+        "j1": {
+          "S1": 14.0,
+          "S2": 11.0,
+          "S3": 17.0,
+          "S4": 14.0,
+          "S9": 11.0,
+          "S11": 10.0,
+          "moyenne": 12.83
+        },
+        "j2": null,
+        "dev": null
+      },
+      "moyennes_categorie": {
+        "j1": 12.83,
+        "j2": null,
+        "dev": null
+      },
+      "moyenne_globale_simple": 12.83,
+      "moyenne_scenario_1": null,
+      "moyenne_scenario_2": null,
+      "moyenne_exam": null
     }
   ]
 }

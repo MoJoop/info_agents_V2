@@ -179,21 +179,66 @@ if OLD_AGENTS.exists():
 
 agents = []
 count_j1 = count_j2 = count_dev = count_s1 = count_s2 = count_photo = count_dup = 0
-seen = set()
+count_no_info = 0
 choix1_counter = Counter()
 
+# Index info_agent rows by telephone (first occurrence wins)
+info_by_tel = {}
 for _, row in info.iterrows():
     tel = tel_to_str(row[COL_INFO_TEL])
     if not tel:
         continue
-    if tel in seen:
+    if tel in info_by_tel:
         count_dup += 1
         continue
-    seen.add(tel)
+    info_by_tel[tel] = row
 
-    prenom = clean_str(row[COL_INFO_PRENOM]) or ""
-    nom = clean_str(row[COL_INFO_NOM]) or ""
-    nom_complet = f"{prenom} {nom}".strip().upper()
+# Build fallback names from classement / exam sheets (for agents not in info)
+name_fallback = {}
+for _, row in classement.iterrows():
+    tel = tel_to_str(row.get(COL_CLA_TEL))
+    if tel and tel not in name_fallback:
+        nm = clean_str(row.get("Prénom & Nom"))
+        if nm:
+            name_fallback[tel] = nm
+for _, row in j1.iterrows():
+    tel = tel_to_str(row.get("tel_agent"))
+    if tel and tel not in name_fallback:
+        nm = clean_str(row.get("prenom_nom"))
+        if nm:
+            name_fallback[tel] = nm
+for _, row in j2.iterrows():
+    tel = tel_to_str(row.get(COL_J2_TEL))
+    if tel and tel not in name_fallback:
+        nm = clean_str(row.get("Prénom Nom"))
+        if nm:
+            name_fallback[tel] = nm
+for _, row in dev.iterrows():
+    tel = tel_to_str(row.get(COL_DEV_TEL))
+    if tel and tel not in name_fallback:
+        nm = clean_str(row.get("Prénom & Nom"))
+        if nm:
+            name_fallback[tel] = nm
+
+# Union of all phone numbers from every source
+all_tels = set(info_by_tel) | set(notes_j1) | set(notes_j2) | set(notes_dev) | set(scenarios)
+print(f"Téléphones uniques dans toutes les sources : {len(all_tels)}")
+
+for tel in sorted(all_tels):
+    info_row = info_by_tel.get(tel)
+
+    if info_row is not None:
+        prenom = clean_str(info_row[COL_INFO_PRENOM]) or ""
+        nom = clean_str(info_row[COL_INFO_NOM]) or ""
+        nom_complet = f"{prenom} {nom}".strip().upper()
+    else:
+        count_no_info += 1
+        nm = name_fallback.get(tel, "")
+        nom_complet = nm.upper() if nm else f"AGENT {tel}"
+        # Try to split last word as nom
+        parts = nm.split() if nm else []
+        prenom = " ".join(parts[:-1]) if len(parts) > 1 else (parts[0] if parts else "")
+        nom = parts[-1] if len(parts) > 1 else ""
 
     j1_rec = notes_j1.get(tel, {})
     j2_rec = notes_j2.get(tel, {})
@@ -215,17 +260,22 @@ for _, row in info.iterrows():
     present = [x for x in (mj1, mj2, mdev) if x is not None]
     moyenne_simple = round(sum(present) / len(present), 2) if present else None
 
-    choix1 = normalize_region(row[COL_INFO_CHOIX1]) if COL_INFO_CHOIX1 else None
-    choix2 = normalize_region(row[COL_INFO_CHOIX2]) if COL_INFO_CHOIX2 else None
-    choix3 = normalize_region(row[COL_INFO_CHOIX3]) if COL_INFO_CHOIX3 else None
+    if info_row is not None:
+        choix1 = normalize_region(info_row[COL_INFO_CHOIX1]) if COL_INFO_CHOIX1 else None
+        choix2 = normalize_region(info_row[COL_INFO_CHOIX2]) if COL_INFO_CHOIX2 else None
+        choix3 = normalize_region(info_row[COL_INFO_CHOIX3]) if COL_INFO_CHOIX3 else None
+        sexe = clean_str(info_row[COL_INFO_SEXE]) if COL_INFO_SEXE else None
+        date_n = date_to_iso(info_row[COL_INFO_DOB]) if COL_INFO_DOB else None
+        adresse = clean_str(info_row[COL_INFO_ADR]) if COL_INFO_ADR else None
+        photo_kobo = clean_str(info_row[COL_INFO_PHOTO]) if COL_INFO_PHOTO else None
+        langues_val = clean_str(info_row[COL_INFO_LANG]) if COL_INFO_LANG else None
+    else:
+        choix1 = choix2 = choix3 = sexe = date_n = adresse = photo_kobo = langues_val = None
+
     if choix1:
         choix1_counter[choix1] += 1
-
-    photo_kobo = clean_str(row[COL_INFO_PHOTO]) if COL_INFO_PHOTO else None
     if photo_kobo:
         count_photo += 1
-
-    langues_val = clean_str(row[COL_INFO_LANG]) if COL_INFO_LANG else None
     if langues_val:
         langues_val = re.sub(r"<[^>]+>", "", langues_val).strip()
 
@@ -235,9 +285,9 @@ for _, row in info.iterrows():
         "prenom": prenom or None,
         "nom": nom or None,
         "nom_complet": nom_complet or None,
-        "sexe": clean_str(row[COL_INFO_SEXE]) if COL_INFO_SEXE else None,
-        "date_naissance": date_to_iso(row[COL_INFO_DOB]) if COL_INFO_DOB else None,
-        "adresse": clean_str(row[COL_INFO_ADR]) if COL_INFO_ADR else None,
+        "sexe": sexe,
+        "date_naissance": date_n,
+        "adresse": adresse,
         "photo_kobo_url": photo_kobo,
         "photo_url": photo_by_tel.get(tel),
         "choix1": choix1,
@@ -292,7 +342,8 @@ print(f"Avec scénario 1:        {count_s1}")
 print(f"Avec scénario 2:        {count_s2}")
 print(f"Avec photo Supabase:    {sum(1 for a in agents if a['photo_url'])}")
 print(f"Avec photo Kobo URL:    {count_photo}")
-print(f"Doublons ignorés:       {count_dup}")
+print(f"Doublons info ignorés:  {count_dup}")
+print(f"Sans fiche info_agent:  {count_no_info}  (identité minimale: nom depuis exam/classement)")
 print(f"\nRépartition choix1:")
 for reg, n in choix1_counter.most_common():
     print(f"  {reg:<14} {n}")
