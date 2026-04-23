@@ -1,6 +1,6 @@
-import { Sliders, RotateCcw } from 'lucide-react'
+import { Sliders, RotateCcw, Trophy } from 'lucide-react'
 import clsx from 'clsx'
-import type { MissingStrategy, Weights } from '../types'
+import type { MissingStrategy, Scenario, Weights } from '../types'
 
 interface Props {
   weights: Weights
@@ -8,19 +8,61 @@ interface Props {
   strategy: MissingStrategy
   setStrategy: (s: MissingStrategy) => void
   groupMeans: Weights
+  scenario: Scenario
+  setScenario: (s: Scenario) => void
 }
 
-export function WeightingPanel({ weights, setWeights, strategy, setStrategy, groupMeans }: Props) {
+export function WeightingPanel({
+  weights,
+  setWeights,
+  strategy,
+  setStrategy,
+  groupMeans,
+  scenario,
+  setScenario,
+}: Props) {
   const reset = () => setWeights({ j1: 1, j2: 1, dev: 1 })
+  const customMode = scenario === 'custom'
 
   return (
     <div className="flex items-center gap-4 flex-wrap px-5 py-2.5 bg-white/70 border-b border-slate-200">
-      <div className="flex items-center gap-1.5 text-slate-700 shrink-0">
-        <Sliders className="h-4 w-4" />
-        <span className="text-xs font-semibold uppercase tracking-wide">Pondération</span>
+      {/* Scenario selector */}
+      <div className="flex items-center gap-1.5 shrink-0">
+        <Trophy className="h-4 w-4 text-slate-700" />
+        <span className="text-xs font-semibold uppercase tracking-wide text-slate-700">Scénario</span>
+        <div className="flex items-center gap-0.5 rounded-lg border border-slate-200 bg-white p-0.5 ml-1">
+          {(
+            [
+              { v: 'scenario_1', label: 'Scénario 1' },
+              { v: 'scenario_2', label: 'Scénario 2' },
+              { v: 'custom', label: 'Pondéré' },
+            ] as { v: Scenario; label: string }[]
+          ).map((o) => (
+            <button
+              key={o.v}
+              onClick={() => setScenario(o.v)}
+              className={clsx(
+                'text-[11px] rounded-md px-2 py-1 transition font-medium',
+                scenario === o.v
+                  ? 'bg-slate-800 text-white'
+                  : 'text-slate-600 hover:bg-slate-100'
+              )}
+            >
+              {o.label}
+            </button>
+          ))}
+        </div>
       </div>
 
-      <div className="flex items-center gap-5 flex-wrap">
+      <div className="h-6 w-px bg-slate-200" />
+
+      {/* Weighting — only active in custom mode */}
+      <div className={clsx('flex items-center gap-1.5 shrink-0', !customMode && 'opacity-40 pointer-events-none')}>
+        <Sliders className="h-4 w-4 text-slate-700" />
+        <span className="text-xs font-semibold uppercase tracking-wide text-slate-700">Pondération</span>
+      </div>
+
+      <div className={clsx('flex items-center gap-5 flex-wrap', !customMode && 'opacity-40 pointer-events-none')}>
         {(['j1', 'j2', 'dev'] as const).map((k) => (
           <div key={k} className="flex items-center gap-2">
             <span className="text-[11px] font-medium text-slate-600 w-12">
@@ -34,6 +76,7 @@ export function WeightingPanel({ weights, setWeights, strategy, setStrategy, gro
               value={weights[k]}
               onChange={(e) => setWeights({ ...weights, [k]: parseFloat(e.target.value) })}
               className="w-24 accent-slate-700"
+              disabled={!customMode}
             />
             <span className="text-[11px] tabular-nums text-slate-500 w-16">
               {weights[k].toFixed(1)} <span className="text-slate-400">({groupMeans[k].toFixed(1)})</span>
@@ -42,9 +85,9 @@ export function WeightingPanel({ weights, setWeights, strategy, setStrategy, gro
         ))}
       </div>
 
-      <div className="h-6 w-px bg-slate-200" />
+      <div className={clsx('h-6 w-px bg-slate-200', !customMode && 'opacity-40')} />
 
-      <div className="flex items-center gap-1.5">
+      <div className={clsx('flex items-center gap-1.5', !customMode && 'opacity-40 pointer-events-none')}>
         <span className="text-[11px] font-medium text-slate-600">Manquantes</span>
         <div className="flex items-center gap-0.5 rounded-lg border border-slate-200 bg-white p-0.5">
           {(
@@ -57,19 +100,11 @@ export function WeightingPanel({ weights, setWeights, strategy, setStrategy, gro
             <button
               key={o.v}
               onClick={() => setStrategy(o.v)}
+              disabled={!customMode}
               className={clsx(
                 'text-[11px] rounded-md px-2 py-1 transition',
-                strategy === o.v
-                  ? 'bg-slate-800 text-white'
-                  : 'text-slate-600 hover:bg-slate-100'
+                strategy === o.v ? 'bg-slate-800 text-white' : 'text-slate-600 hover:bg-slate-100'
               )}
-              title={
-                o.v === 'average_present'
-                  ? 'Moyenne des notes présentes uniquement'
-                  : o.v === 'group_mean'
-                  ? 'Remplacer par la moyenne du groupe'
-                  : 'Zéro pour les notes manquantes'
-              }
             >
               {o.label}
             </button>
@@ -79,12 +114,14 @@ export function WeightingPanel({ weights, setWeights, strategy, setStrategy, gro
 
       <div className="flex-1" />
 
-      <button
-        onClick={reset}
-        className="inline-flex items-center gap-1 text-[11px] text-slate-500 hover:text-slate-800"
-      >
-        <RotateCcw className="h-3 w-3" /> Réinitialiser
-      </button>
+      {customMode && (
+        <button
+          onClick={reset}
+          className="inline-flex items-center gap-1 text-[11px] text-slate-500 hover:text-slate-800"
+        >
+          <RotateCcw className="h-3 w-3" /> Réinitialiser
+        </button>
+      )}
     </div>
   )
 }

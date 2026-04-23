@@ -2,6 +2,8 @@ export type CategoryMean = 'j1' | 'j2' | 'dev'
 
 export type MissingStrategy = 'average_present' | 'group_mean' | 'zero'
 
+export type Scenario = 'scenario_1' | 'scenario_2' | 'custom'
+
 export interface Weights {
   j1: number
   j2: number
@@ -41,6 +43,9 @@ export interface Agent {
     dev: number | null
   }
   moyenne_globale_simple: number | null
+  moyenne_scenario_1?: number | null
+  moyenne_scenario_2?: number | null
+  moyenne_exam?: number | null
 }
 
 export interface DR {

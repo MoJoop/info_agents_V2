@@ -12,6 +12,8 @@ interface Props {
   scoreMap: Map<string, number | null>
   onOpenAgent: (a: Agent) => void
   onRemove: (agent_id: string) => void
+  canEdit?: boolean
+  onGatedAction?: () => void
 }
 
 export function EquipeCard({
@@ -21,6 +23,8 @@ export function EquipeCard({
   scoreMap,
   onOpenAgent,
   onRemove,
+  canEdit = true,
+  onGatedAction,
 }: Props) {
   return (
     <div
@@ -51,6 +55,8 @@ export function EquipeCard({
             scoreMap={scoreMap}
             onOpenAgent={onOpenAgent}
             onRemove={onRemove}
+            canEdit={canEdit}
+            onGatedAction={onGatedAction}
           />
         ))}
       </div>
@@ -66,12 +72,15 @@ interface SlotProps {
   scoreMap: Map<string, number | null>
   onOpenAgent: (a: Agent) => void
   onRemove: (agent_id: string) => void
+  canEdit: boolean
+  onGatedAction?: () => void
 }
 
-function Slot({ equipeId, slot, assignment, agentsById, scoreMap, onOpenAgent, onRemove }: SlotProps) {
+function Slot({ equipeId, slot, assignment, agentsById, scoreMap, onOpenAgent, onRemove, canEdit, onGatedAction }: SlotProps) {
   const droppableId = `${equipeId}::${slot}`
   const { setNodeRef, isOver } = useDroppable({
     id: droppableId,
+    disabled: !canEdit,
     data: { equipeId, slot },
   })
 
@@ -104,17 +113,21 @@ function Slot({ equipeId, slot, assignment, agentsById, scoreMap, onOpenAgent, o
             agent={agent}
             score={scoreMap.get(agent.id) ?? null}
             onClick={() => onOpenAgent(agent)}
+            draggingDisabled={!canEdit}
+            onGatedAction={onGatedAction}
           />
-          <button
-            onClick={(e) => {
-              e.stopPropagation()
-              onRemove(agent.id)
-            }}
-            className="absolute -top-1.5 -right-1.5 h-5 w-5 rounded-full bg-white border border-slate-300 text-slate-500 hover:text-red-600 hover:border-red-300 grid place-items-center shadow-sm"
-            title="Retirer de l'équipe"
-          >
-            <X className="h-3 w-3" />
-          </button>
+          {canEdit && (
+            <button
+              onClick={(e) => {
+                e.stopPropagation()
+                onRemove(agent.id)
+              }}
+              className="absolute -top-1.5 -right-1.5 h-5 w-5 rounded-full bg-white border border-slate-300 text-slate-500 hover:text-red-600 hover:border-red-300 grid place-items-center shadow-sm"
+              title="Retirer de l'équipe"
+            >
+              <X className="h-3 w-3" />
+            </button>
+          )}
         </div>
       )}
     </div>

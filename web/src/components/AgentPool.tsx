@@ -10,9 +10,11 @@ interface Props {
   scoreMap: Map<string, number | null>
   assignedIds: Set<string>
   onOpenAgent: (a: Agent) => void
+  draggingDisabled?: boolean
+  onGatedAction?: () => void
 }
 
-export function AgentPool({ agents, scoreMap, assignedIds, onOpenAgent }: Props) {
+export function AgentPool({ agents, scoreMap, assignedIds, onOpenAgent, draggingDisabled, onGatedAction }: Props) {
   const [query, setQuery] = useState('')
   const [hideAssigned, setHideAssigned] = useState(true)
   const [regionFilter, setRegionFilter] = useState<Set<string>>(new Set())
@@ -158,6 +160,8 @@ export function AgentPool({ agents, scoreMap, assignedIds, onOpenAgent }: Props)
                       agent={a}
                       score={scoreMap.get(a.id) ?? null}
                       onClick={() => onOpenAgent(a)}
+                      draggingDisabled={draggingDisabled}
+                      onGatedAction={onGatedAction}
                     />
                   ))}
                 </div>

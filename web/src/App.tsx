@@ -8,19 +8,21 @@ import {
   type DragEndEvent,
   type DragStartEvent,
 } from '@dnd-kit/core'
-import { AlertTriangle, Download, Loader2, Map as MapIcon, Trash2, Users, Wifi, WifiOff } from 'lucide-react'
+import { AlertTriangle, Download, Loader2, LogIn, LogOut, Map as MapIcon, Trash2, Users, Wifi, WifiOff } from 'lucide-react'
 import type { SyncState } from './lib/store'
 import clsx from 'clsx'
-import type { Agent, AgentsPayload, Equipe, EquipesPayload, MissingStrategy, Weights } from './types'
+import type { Agent, AgentsPayload, Equipe, EquipesPayload, MissingStrategy, Scenario, Weights } from './types'
 import { AgentPool } from './components/AgentPool'
 import { EquipeGrid } from './components/EquipeGrid'
 import { AgentModal } from './components/AgentModal'
 import { WeightingPanel } from './components/WeightingPanel'
 import { AgentCard } from './components/AgentCard'
 import { MapView } from './components/MapView'
+import { LoginModal } from './components/LoginModal'
 import { useToast } from './components/Toast'
-import { computeGroupMeans, computeScore, DEFAULT_WEIGHTS } from './lib/scoring'
+import { computeGroupMeans, computeScore, computeScoreForScenario, DEFAULT_WEIGHTS } from './lib/scoring'
 import { useAssignments } from './lib/store'
+import { useAuth } from './lib/auth'
 import { isSupabaseConfigured } from './lib/supabase'
 import { exportTeamsToExcel } from './lib/export'
 
@@ -85,10 +87,20 @@ export default function App() {
   const [openAgent, setOpenAgent] = useState<Agent | null>(null)
   const [activeDrag, setActiveDrag] = useState<Agent | null>(null)
   const [tab, setTab] = useState<'composition' | 'carte'>('composition')
+  const [scenario, setScenario] = useState<Scenario>('scenario_1')
+  const [loginOpen, setLoginOpen] = useState(false)
   const toast = useToast()
+  const { isAuthed, username, logout } = useAuth()
   const { assignments, place, remove, clearAll, ready, sync } = useAssignments({
     onError: (msg) => toast.push('error', msg),
   })
+
+  const requireAuth = () => {
+    if (isAuthed) return true
+    toast.push('info', 'Connectez-vous pour modifier les affectations')
+    setLoginOpen(true)
+    return false
+  }
 
   useEffect(() => {
     Promise.all([
@@ -107,10 +119,13 @@ export default function App() {
   const scoreMap = useMemo(() => {
     const m = new Map<string, number | null>()
     for (const a of agents) {
-      m.set(a.id, computeScore(a, weights, strategy, groupMeans))
+      const s = scenario === 'custom'
+        ? computeScore(a, weights, strategy, groupMeans)
+        : computeScoreForScenario(a, scenario)
+      m.set(a.id, s)
     }
     return m
-  }, [agents, weights, strategy, groupMeans])
+  }, [agents, weights, strategy, groupMeans, scenario])
 
   const sortedAgents = useMemo(() => {
     return [...agents].sort((a, b) => {
@@ -135,6 +150,10 @@ export default function App() {
   const handleDragEnd = async (e: DragEndEvent) => {
     setActiveDrag(null)
     if (!e.over) return
+    if (!isAuthed) {
+      requireAuth()
+      return
+    }
     const agent = e.active.data.current?.agent as Agent | undefined
     const target = e.over.data.current as { equipeId: string; slot: number } | undefined
     if (!agent || !target) return
@@ -185,17 +204,48 @@ export default function App() {
               )}
             </div>
             <SyncBadge configured={isSupabaseConfigured} ready={ready} sync={sync} />
+            {isAuthed ? (
+              <button
+                onClick={() => {
+                  logout()
+                  toast.push('info', 'Déconnecté')
+                }}
+                className="inline-flex items-center gap-1.5 text-xs font-medium rounded-lg border border-slate-200 text-slate-600 px-3 py-1.5 hover:bg-slate-50"
+                title={`Connecté en tant que ${username}`}
+              >
+                <LogOut className="h-3.5 w-3.5" /> {username}
+              </button>
+            ) : (
+              <button
+                onClick={() => setLoginOpen(true)}
+                className="inline-flex items-center gap-1.5 text-xs font-medium rounded-lg border border-slate-300 text-slate-700 bg-white px-3 py-1.5 hover:bg-slate-50"
+              >
+                <LogIn className="h-3.5 w-3.5" /> Se connecter
+              </button>
+            )}
             <button
-              onClick={() => exportTeamsToExcel(agents, equipes, assignments)}
-              className="inline-flex items-center gap-1.5 text-xs font-medium rounded-lg bg-slate-800 text-white px-3 py-1.5 hover:bg-slate-700"
+              onClick={() => {
+                if (!requireAuth()) return
+                exportTeamsToExcel(agents, equipes, assignments)
+              }}
+              className={clsx(
+                'inline-flex items-center gap-1.5 text-xs font-medium rounded-lg px-3 py-1.5',
+                isAuthed ? 'bg-slate-800 text-white hover:bg-slate-700' : 'bg-slate-200 text-slate-500 cursor-not-allowed'
+              )}
             >
               <Download className="h-3.5 w-3.5" /> Exporter Excel
             </button>
             <button
               onClick={() => {
+                if (!requireAuth()) return
                 if (confirm('Vider toutes les affectations ?')) clearAll()
               }}
-              className="inline-flex items-center gap-1.5 text-xs font-medium rounded-lg border border-slate-200 text-slate-600 px-3 py-1.5 hover:bg-slate-50"
+              className={clsx(
+                'inline-flex items-center gap-1.5 text-xs font-medium rounded-lg px-3 py-1.5',
+                isAuthed
+                  ? 'border border-slate-200 text-slate-600 hover:bg-slate-50'
+                  : 'border border-slate-200 text-slate-400 cursor-not-allowed'
+              )}
             >
               <Trash2 className="h-3.5 w-3.5" /> Tout vider
             </button>
@@ -233,6 +283,8 @@ export default function App() {
               strategy={strategy}
               setStrategy={setStrategy}
               groupMeans={groupMeans}
+              scenario={scenario}
+              setScenario={setScenario}
             />
 
             {/* Body */}
@@ -243,6 +295,8 @@ export default function App() {
                   scoreMap={scoreMap}
                   assignedIds={assignedIds}
                   onOpenAgent={setOpenAgent}
+                  draggingDisabled={!isAuthed}
+                  onGatedAction={requireAuth}
                 />
               </aside>
 
@@ -254,6 +308,8 @@ export default function App() {
                   scoreMap={scoreMap}
                   onOpenAgent={setOpenAgent}
                   onRemove={remove}
+                  canEdit={isAuthed}
+                  onGatedAction={requireAuth}
                 />
               </main>
             </div>
@@ -272,6 +328,8 @@ export default function App() {
         score={openAgent ? scoreMap.get(openAgent.id) ?? null : null}
         onClose={() => setOpenAgent(null)}
       />
+
+      <LoginModal open={loginOpen} onClose={() => setLoginOpen(false)} />
 
       <DragOverlay>
         {activeDrag ? (

@@ -1,6 +1,12 @@
-import type { Agent, Weights, MissingStrategy } from '../types'
+import type { Agent, Scenario, Weights, MissingStrategy } from '../types'
 
 export const DEFAULT_WEIGHTS: Weights = { j1: 1, j2: 1, dev: 1 }
+
+export function computeScoreForScenario(agent: Agent, scenario: Scenario): number | null {
+  if (scenario === 'scenario_1') return agent.moyenne_scenario_1 ?? null
+  if (scenario === 'scenario_2') return agent.moyenne_scenario_2 ?? null
+  return null
+}
 
 export function computeScore(
   agent: Agent,

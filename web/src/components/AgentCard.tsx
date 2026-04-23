@@ -1,5 +1,6 @@
 import { useDraggable } from '@dnd-kit/core'
 import clsx from 'clsx'
+import { Lock } from 'lucide-react'
 import type { Agent } from '../types'
 import { regionClass } from '../lib/scoring'
 
@@ -8,9 +9,10 @@ interface Props {
   score: number | null
   draggingDisabled?: boolean
   onClick?: () => void
+  onGatedAction?: () => void
 }
 
-export function AgentCard({ agent, score, draggingDisabled, onClick }: Props) {
+export function AgentCard({ agent, score, draggingDisabled, onClick, onGatedAction }: Props) {
   const { attributes, listeners, setNodeRef, isDragging } = useDraggable({
     id: agent.id,
     disabled: draggingDisabled,
@@ -22,18 +24,24 @@ export function AgentCard({ agent, score, draggingDisabled, onClick }: Props) {
   return (
     <div
       ref={setNodeRef}
-      {...listeners}
+      {...(draggingDisabled ? {} : listeners)}
       {...attributes}
+      onPointerDown={(e) => {
+        if (draggingDisabled && onGatedAction && e.button === 0) {
+          onGatedAction()
+        }
+      }}
       onClick={(e) => {
-        // Only trigger click when not dragging
         if (!isDragging) onClick?.()
         e.stopPropagation()
       }}
       className={clsx(
         'group relative flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-1.5 py-1.5 shadow-sm transition min-w-0',
-        'hover:border-slate-300 hover:shadow-md cursor-grab active:cursor-grabbing select-none',
+        'hover:border-slate-300 hover:shadow-md select-none',
+        draggingDisabled ? 'cursor-pointer' : 'cursor-grab active:cursor-grabbing',
         isDragging && 'opacity-30'
       )}
+      title={draggingDisabled ? 'Connectez-vous pour déplacer' : undefined}
     >
       <div className="relative shrink-0">
         {agent.photo_url ? (
@@ -51,6 +59,11 @@ export function AgentCard({ agent, score, draggingDisabled, onClick }: Props) {
             )}
           >
             {initials}
+          </div>
+        )}
+        {draggingDisabled && (
+          <div className="absolute -bottom-0.5 -right-0.5 h-3.5 w-3.5 rounded-full bg-slate-400 grid place-items-center ring-1 ring-white">
+            <Lock className="h-2 w-2 text-white" />
           </div>
         )}
       </div>

@@ -8,9 +8,11 @@ interface Props {
   scoreMap: Map<string, number | null>
   onOpenAgent: (a: Agent) => void
   onRemove: (agent_id: string) => void
+  canEdit?: boolean
+  onGatedAction?: () => void
 }
 
-export function EquipeGrid({ equipes, assignments, agents, scoreMap, onOpenAgent, onRemove }: Props) {
+export function EquipeGrid({ equipes, assignments, agents, scoreMap, onOpenAgent, onRemove, canEdit = true, onGatedAction }: Props) {
   const agentsById = new Map(agents.map((a) => [a.id, a]))
 
   const bySlot = new Map<string, (Assignment | undefined)[]>()
@@ -31,6 +33,8 @@ export function EquipeGrid({ equipes, assignments, agents, scoreMap, onOpenAgent
           scoreMap={scoreMap}
           onOpenAgent={onOpenAgent}
           onRemove={onRemove}
+          canEdit={canEdit}
+          onGatedAction={onGatedAction}
         />
       ))}
     </div>
