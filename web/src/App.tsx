@@ -8,13 +8,15 @@ import {
   type DragEndEvent,
   type DragStartEvent,
 } from '@dnd-kit/core'
-import { Download, Trash2, Users, Wifi, WifiOff } from 'lucide-react'
+import { Download, Map as MapIcon, Trash2, Users, Wifi, WifiOff } from 'lucide-react'
+import clsx from 'clsx'
 import type { Agent, AgentsPayload, Equipe, EquipesPayload, MissingStrategy, Weights } from './types'
 import { AgentPool } from './components/AgentPool'
 import { EquipeGrid } from './components/EquipeGrid'
 import { AgentModal } from './components/AgentModal'
 import { WeightingPanel } from './components/WeightingPanel'
 import { AgentCard } from './components/AgentCard'
+import { MapView } from './components/MapView'
 import { computeGroupMeans, computeScore, DEFAULT_WEIGHTS } from './lib/scoring'
 import { useAssignments } from './lib/store'
 import { isSupabaseConfigured } from './lib/supabase'
@@ -28,6 +30,7 @@ export default function App() {
   const [strategy, setStrategy] = useState<MissingStrategy>('average_present')
   const [openAgent, setOpenAgent] = useState<Agent | null>(null)
   const [activeDrag, setActiveDrag] = useState<Agent | null>(null)
+  const [tab, setTab] = useState<'composition' | 'carte'>('composition')
   const { assignments, place, remove, clearAll, ready } = useAssignments()
 
   useEffect(() => {
@@ -148,37 +151,67 @@ export default function App() {
           </div>
         </header>
 
-        {/* Weighting bar — horizontal under header */}
-        <WeightingPanel
-          weights={weights}
-          setWeights={setWeights}
-          strategy={strategy}
-          setStrategy={setStrategy}
-          groupMeans={groupMeans}
-        />
+        {/* Tabs */}
+        <nav className="shrink-0 border-b border-slate-200 bg-white/60 px-5 flex items-center gap-1">
+          {([
+            { id: 'composition', label: 'Composition', Icon: Users },
+            { id: 'carte', label: 'Carte', Icon: MapIcon },
+          ] as const).map(({ id, label, Icon }) => (
+            <button
+              key={id}
+              onClick={() => setTab(id)}
+              className={clsx(
+                'inline-flex items-center gap-1.5 px-3 py-2 text-sm font-medium border-b-2 -mb-px transition',
+                tab === id
+                  ? 'border-slate-800 text-slate-900'
+                  : 'border-transparent text-slate-500 hover:text-slate-700'
+              )}
+            >
+              <Icon className="h-4 w-4" />
+              {label}
+            </button>
+          ))}
+        </nav>
 
-        {/* Body */}
-        <div className="flex-1 min-h-0 grid grid-cols-[minmax(420px,36%)_1fr] gap-0">
-          <aside className="border-r border-slate-200 bg-white/50 flex flex-col min-h-0">
-            <AgentPool
-              agents={sortedAgents}
-              scoreMap={scoreMap}
-              assignedIds={assignedIds}
-              onOpenAgent={setOpenAgent}
+        {tab === 'composition' ? (
+          <>
+            {/* Weighting bar — horizontal under tabs */}
+            <WeightingPanel
+              weights={weights}
+              setWeights={setWeights}
+              strategy={strategy}
+              setStrategy={setStrategy}
+              groupMeans={groupMeans}
             />
-          </aside>
 
-          <main className="overflow-auto">
-            <EquipeGrid
-              equipes={equipes}
-              assignments={assignments}
-              agents={agents}
-              scoreMap={scoreMap}
-              onOpenAgent={setOpenAgent}
-              onRemove={remove}
-            />
+            {/* Body */}
+            <div className="flex-1 min-h-0 grid grid-cols-[minmax(420px,36%)_1fr] gap-0">
+              <aside className="border-r border-slate-200 bg-white/50 flex flex-col min-h-0">
+                <AgentPool
+                  agents={sortedAgents}
+                  scoreMap={scoreMap}
+                  assignedIds={assignedIds}
+                  onOpenAgent={setOpenAgent}
+                />
+              </aside>
+
+              <main className="overflow-auto">
+                <EquipeGrid
+                  equipes={equipes}
+                  assignments={assignments}
+                  agents={agents}
+                  scoreMap={scoreMap}
+                  onOpenAgent={setOpenAgent}
+                  onRemove={remove}
+                />
+              </main>
+            </div>
+          </>
+        ) : (
+          <main className="flex-1 min-h-0 relative">
+            <MapView />
           </main>
-        </div>
+        )}
       </div>
 
       <AgentModal

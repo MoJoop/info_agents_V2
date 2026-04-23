@@ -14,8 +14,10 @@
     "@dnd-kit/sortable": "^10.0.0",
     "@dnd-kit/utilities": "^3.2.2",
     "@supabase/supabase-js": "^2.104.0",
+    "@turf/turf": "^7.3.5",
     "clsx": "^2.1.1",
     "lucide-react": "^1.8.0",
+    "maplibre-gl": "^5.23.0",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
     "xlsx": "^0.18.5"
