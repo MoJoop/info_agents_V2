@@ -1,3 +1,4 @@
+import type { PointerEvent as ReactPointerEvent } from 'react'
 import { useDraggable } from '@dnd-kit/core'
 import clsx from 'clsx'
 import { Lock } from 'lucide-react'
@@ -21,16 +22,20 @@ export function AgentCard({ agent, score, draggingDisabled, onClick, onGatedActi
 
   const initials = ((agent.prenom?.[0] ?? '') + (agent.nom?.[0] ?? '')).toUpperCase() || '?'
 
+  const gatedPointerHandler = draggingDisabled
+    ? {
+        onPointerDown: (e: ReactPointerEvent) => {
+          if (e.button === 0 && onGatedAction) onGatedAction()
+        },
+      }
+    : {}
+
   return (
     <div
       ref={setNodeRef}
       {...(draggingDisabled ? {} : listeners)}
       {...attributes}
-      onPointerDown={(e) => {
-        if (draggingDisabled && onGatedAction && e.button === 0) {
-          onGatedAction()
-        }
-      }}
+      {...gatedPointerHandler}
       onClick={(e) => {
         if (!isDragging) onClick?.()
         e.stopPropagation()

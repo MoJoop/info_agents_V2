@@ -12,7 +12,11 @@ import {
 // anyone can inspect it. It is security-by-obscurity, suitable for a link
 // shared with supervisors. For real server-side gating, migrate mama_diop
 // to Supabase Auth and restrict RLS write policies to `auth.uid() IS NOT NULL`.
-const EXPECTED_HASH = (import.meta.env.VITE_AUTH_CREDENTIAL_HASH as string | undefined) ?? ''
+// Accept a comma-separated list of SHA-256 hashes — one per allowed credential.
+const RAW_HASHES = (import.meta.env.VITE_AUTH_CREDENTIAL_HASH as string | undefined) ?? ''
+const ALLOWED_HASHES = new Set(
+  RAW_HASHES.split(',').map((s) => s.trim().toLowerCase()).filter(Boolean)
+)
 
 const LS_KEY = 'ehcvm3.auth'
 
@@ -44,9 +48,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, [])
 
   const login = useCallback(async (u: string, p: string) => {
-    if (!EXPECTED_HASH) return false
-    const h = await sha256Hex(`${u.trim()}:${p}`)
-    if (h.toLowerCase() !== EXPECTED_HASH.toLowerCase()) return false
+    if (ALLOWED_HASHES.size === 0) return false
+    const h = (await sha256Hex(`${u.trim()}:${p}`)).toLowerCase()
+    if (!ALLOWED_HASHES.has(h)) return false
     setUsername(u.trim())
     localStorage.setItem(LS_KEY, JSON.stringify({ username: u.trim(), ts: Date.now() }))
     return true
