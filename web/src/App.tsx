@@ -208,11 +208,10 @@ export default function App() {
             </div>
           </>
         ) : (
-          <main
-            className="relative overflow-hidden"
-            style={{ flex: '1 1 0', minHeight: 0, height: '100%' }}
-          >
-            <MapView />
+          <main className="flex-1 min-h-0 relative overflow-hidden">
+            <div className="absolute inset-0">
+              <MapView />
+            </div>
           </main>
         )}
       </div>
