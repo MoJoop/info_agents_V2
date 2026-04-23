@@ -111,7 +111,7 @@ export default function App() {
 
   return (
     <DndContext sensors={sensors} onDragStart={handleDragStart} onDragEnd={handleDragEnd}>
-      <div className="h-screen flex flex-col">
+      <div className="fixed inset-0 flex flex-col overflow-hidden">
         {/* Header */}
         <header className="shrink-0 border-b border-slate-200 bg-white/80 backdrop-blur sticky top-0 z-20">
           <div className="px-5 py-3 flex items-center gap-4">
