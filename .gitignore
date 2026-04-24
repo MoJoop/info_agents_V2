@@ -6,6 +6,10 @@ web/node_modules/
 web/dist/
 web/.env.local
 web/.env
+bon_photos/node_modules/
+bon_photos/dist/
+bon_photos/.env.local
+bon_photos/.env
 .DS_Store
 .vscode/
 .idea/
